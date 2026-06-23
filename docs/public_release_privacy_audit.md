@@ -1,6 +1,6 @@
 # Public Release Privacy Audit
 
-Generated: 2026-06-23T01:39:39.908122+00:00
+Generated: 2026-06-23T02:00:53.148306+00:00
 
 | Check | Result |
 |---|---|
@@ -51,7 +51,30 @@ Generated: 2026-06-23T01:39:39.908122+00:00
 | figures\graphical_abstract\Graphical_Abstract.pdf | PASS |  |
 | figures\graphical_abstract\Graphical_Abstract.svg | PASS |  |
 | figures\graphical_abstract\Graphical_Abstract_920x300.png | PASS |  |
-| figures\main\README_missing_main_figures.md | PASS |  |
+| figures\main\Figure_1_Cohort_Flow.pdf | PASS |  |
+| figures\main\Figure_1_Cohort_Flow.png | PASS |  |
+| figures\main\Figure_1_Cohort_Flow.svg | PASS |  |
+| figures\main\Figure_1_Cohort_Flow.tiff | PASS |  |
+| figures\main\Figure_1_Cohort_Flow_rendered_qc.png | PASS |  |
+| figures\main\Figure_2_Mortality_TimeVarying_and_StandardizedRisk.pdf | PASS |  |
+| figures\main\Figure_2_Mortality_TimeVarying_and_StandardizedRisk.png | PASS |  |
+| figures\main\Figure_2_Mortality_TimeVarying_and_StandardizedRisk.svg | PASS |  |
+| figures\main\Figure_2_Mortality_TimeVarying_and_StandardizedRisk.tiff | PASS |  |
+| figures\main\Figure_2_Mortality_TimeVarying_and_StandardizedRisk_rendered_qc.png | PASS |  |
+| figures\main\Figure_3_90d_SameSystem_Readmission_CIF.pdf | PASS |  |
+| figures\main\Figure_3_90d_SameSystem_Readmission_CIF.png | PASS |  |
+| figures\main\Figure_3_90d_SameSystem_Readmission_CIF.svg | PASS |  |
+| figures\main\Figure_3_90d_SameSystem_Readmission_CIF.tiff | PASS |  |
+| figures\main\Figure_3_90d_SameSystem_Readmission_CIF_rendered_qc.png | PASS |  |
+| figures\main\Figure_4_365d_SameSystem_ICU_Readmission_CIF.pdf | PASS |  |
+| figures\main\Figure_4_365d_SameSystem_ICU_Readmission_CIF.png | PASS |  |
+| figures\main\Figure_4_365d_SameSystem_ICU_Readmission_CIF.svg | PASS |  |
+| figures\main\Figure_4_365d_SameSystem_ICU_Readmission_CIF.tiff | PASS |  |
+| figures\main\Figure_4_365d_SameSystem_ICU_Readmission_CIF_rendered_qc.png | PASS |  |
+| figures\main\figure_source_data.csv | PASS |  |
+| figures\main\main_figure_numeric_audit.csv | PASS |  |
+| figures\main\README_final_main_figures.md | PASS |  |
+| figures\main\SHA256SUMS.txt | PASS |  |
 | figures\supplementary\source_data.csv | PASS |  |
 | figures\supplementary\Supplementary_Figure_S1_KM_mortality.pdf | PASS |  |
 | figures\supplementary\Supplementary_Figure_S1_KM_mortality.png | PASS |  |

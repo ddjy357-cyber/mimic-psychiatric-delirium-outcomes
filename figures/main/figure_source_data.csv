@@ -1,0 +1,22 @@
+figure,group,period_or_endpoint,estimate,lower_95ci,upper_95ci,unit
+Figure 2A,G2,0–30 d,1.197,1.029,1.394,hazard ratio
+Figure 2A,G2,30–90 d,1.223,1.046,1.43,hazard ratio
+Figure 2A,G2,90–365 d,1.048,0.935,1.174,hazard ratio
+Figure 2A,G3,0–30 d,2.158,1.904,2.446,hazard ratio
+Figure 2A,G3,30–90 d,1.458,1.263,1.684,hazard ratio
+Figure 2A,G3,90–365 d,1.109,0.994,1.238,hazard ratio
+Figure 2A,G4,0–30 d,2.198,1.901,2.543,hazard ratio
+Figure 2A,G4,30–90 d,1.35,1.13,1.613,hazard ratio
+Figure 2A,G4,90–365 d,1.137,0.996,1.298,hazard ratio
+Figure 2B,G1,365-day mortality,15.26,14.65,15.86,percent
+Figure 2B,G2,365-day mortality,16.74,15.85,17.66,percent
+Figure 2B,G3,365-day mortality,20.24,19.41,21.24,percent
+Figure 2B,G4,365-day mortality,20.19,18.92,21.36,percent
+Figure 3,G1,90-day readmission CIF,25.17,24.39,25.99,percent
+Figure 3,G2,90-day readmission CIF,27.47,26.29,28.6,percent
+Figure 3,G3,90-day readmission CIF,26.9,25.57,28.14,percent
+Figure 3,G4,90-day readmission CIF,27.49,25.81,29.2,percent
+Figure 4,G1,365-day ICU readmission CIF,13.13,12.49,13.77,percent
+Figure 4,G2,365-day ICU readmission CIF,12.96,12.06,13.83,percent
+Figure 4,G3,365-day ICU readmission CIF,14.9,13.9,16.01,percent
+Figure 4,G4,365-day ICU readmission CIF,12.88,11.73,14.19,percent

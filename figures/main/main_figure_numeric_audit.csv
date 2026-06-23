@@ -1,0 +1,76 @@
+﻿figure,item,metric,figure_value,official_value,absolute_difference,tolerance,pass,official_source
+Figure 1,base_population,displayed count present in extracted PDF text,"46,316","46,316",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,delirium_classifiable_72h,displayed count present in extracted PDF text,"29,458","29,458",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,delirium_unclassifiable_72h,displayed count present in extracted PDF text,"16,858","16,858",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,G1_n,displayed count present in extracted PDF text,"13,909","13,909",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,G2_n,displayed count present in extracted PDF text,"5,987","5,987",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,G3_n,displayed count present in extracted PDF text,"6,067","6,067",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,G4_n,displayed count present in extracted PDF text,"3,495","3,495",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,primary_mortality_model_n,displayed count present in extracted PDF text,"29,366","29,366",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,primary_mortality_deaths,displayed count present in extracted PDF text,"5,105","5,105",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,conservative_readmission_cohort,displayed count present in extracted PDF text,"24,033","24,033",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,conservative_90d_readmissions,displayed count present in extracted PDF text,"6,321","6,321",,0.0,True,analysis_dataset QC/model accounting
+Figure 1,conservative_365d_icu_readmissions,displayed count present in extracted PDF text,"3,228","3,228",,0.0,True,analysis_dataset QC/model accounting
+Figure 2A,G2 0–30 d,HR,1.197,1.197388024778283,0.00038802477828303594,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 0–30 d,lower_95ci,1.029,1.028818580127014,0.00018141987298592177,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 0–30 d,upper_95ci,1.394,1.393577166642378,0.0004228333576219434,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 30–90 d,HR,1.223,1.223206938892542,0.0002069388925418636,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 30–90 d,lower_95ci,1.046,1.0460338352950664,3.383529506639782e-05,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 30–90 d,upper_95ci,1.43,1.430388927077873,0.0003889270778729692,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 90–365 d,HR,1.048,1.0475642399952865,0.0004357600047135701,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 90–365 d,lower_95ci,0.935,0.9347336910065234,0.0002663089934766827,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G2 90–365 d,upper_95ci,1.174,1.1740144251516482,1.4425151648289614e-05,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 0–30 d,HR,2.158,2.157955978698344,4.402130165592766e-05,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 0–30 d,lower_95ci,1.904,1.9035429448802936,0.00045705511970628443,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 0–30 d,upper_95ci,2.446,2.4463719184926367,0.0003719184926365138,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 30–90 d,HR,1.458,1.4580541897875534,5.4189787553449165e-05,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 30–90 d,lower_95ci,1.263,1.262572140688616,0.00042785931138400457,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 30–90 d,upper_95ci,1.684,1.6838024155970572,0.00019758440294270763,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 90–365 d,HR,1.109,1.1092443759512565,0.00024437595125648137,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 90–365 d,lower_95ci,0.994,0.9940626227381064,6.26227381064215e-05,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G3 90–365 d,upper_95ci,1.238,1.237772206131582,0.00022779386841809135,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 0–30 d,HR,2.198,2.198387803245029,0.0003878032450290725,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 0–30 d,lower_95ci,1.901,1.9005306386223584,0.00046936137764164165,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 0–30 d,upper_95ci,2.543,2.542926083506733,7.391649326704552e-05,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 30–90 d,HR,1.35,1.3502619100125064,0.00026191001250630563,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 30–90 d,lower_95ci,1.13,1.1304311773964877,0.00043117739648779185,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 30–90 d,upper_95ci,1.613,1.6128423048536904,0.0001576951463095888,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 90–365 d,HR,1.137,1.1368890945899786,0.00011090541002145571,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 90–365 d,lower_95ci,0.996,0.9955526137446484,0.0004473862553515673,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2A,G4 90–365 d,upper_95ci,1.298,1.2982908141197866,0.00029081411978659766,0.0015,True,time_varying_cox_exposure_effects.csv
+Figure 2B,G1,risk percent,15.26,15.255094050502871,0.004905949497128859,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G1,lower_95ci percent,14.65,14.65417264122823,0.004172641228230134,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G1,upper_95ci percent,15.86,15.85687916590928,0.003120834090719171,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G2,risk percent,16.74,16.73523194513031,0.004768054869689564,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G2,lower_95ci percent,15.85,15.851532750653499,0.0015327506534994484,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G2,upper_95ci percent,17.66,17.66366795600372,0.003667956003720718,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G3,risk percent,20.24,20.235154971637257,0.004845028362741033,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G3,lower_95ci percent,19.41,19.40646993738574,0.003530062614260032,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G3,upper_95ci percent,21.24,21.23892059112299,0.001079408877007637,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G4,risk percent,20.19,20.19401074885473,0.004010748854728519,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G4,lower_95ci percent,18.92,18.91877565476692,0.0012243452330800153,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 2B,G4,upper_95ci percent,21.36,21.36315815465747,0.003158154657469936,0.01,True,fixed_horizon_365d_standardized_risk.csv
+Figure 3,G1,CIF percent,25.17,25.17341502309366,0.003415023093658931,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G1,lower_95ci percent,24.39,24.38561691305211,0.004383086947889581,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G1,upper_95ci percent,25.99,25.98822545133429,0.001774548665707698,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G2,CIF percent,27.47,27.46859215743413,0.0014078425658681226,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G2,lower_95ci percent,26.29,26.29178589882624,0.0017858988262418052,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G2,upper_95ci percent,28.6,28.60296604831011,0.002966048310106828,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G3,CIF percent,26.9,26.90072717932525,0.0007271793252527914,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G3,lower_95ci percent,25.57,25.572929239032398,0.0029292390323973905,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G3,upper_95ci percent,28.14,28.14122339743344,0.0012233974334385778,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G4,CIF percent,27.49,27.489155713388058,0.0008442866119402481,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G4,lower_95ci percent,25.81,25.80781929407373,0.002180705926267734,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 3,G4,upper_95ci percent,29.2,29.19537264688718,0.004627353112820032,0.01,True,standardized_90d_readmission_cif_v1_2.csv
+Figure 4,G1,CIF percent,13.13,13.128519438447158,0.0014805615528423743,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G1,lower_95ci percent,12.49,12.485903156532551,0.004096843467449318,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G1,upper_95ci percent,13.77,13.76785075926622,0.0021492407337788677,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G2,CIF percent,12.96,12.960481012157752,0.00048101215775098183,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G2,lower_95ci percent,12.06,12.055334185750299,0.004665814249701583,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G2,upper_95ci percent,13.83,13.82648982840418,0.003510171595820566,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G3,CIF percent,14.9,14.90345880104158,0.0034588010415799175,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G3,lower_95ci percent,13.9,13.897329429219859,0.0026705707801415457,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G3,upper_95ci percent,16.01,16.01059336698076,0.0005933669807589581,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G4,CIF percent,12.88,12.87669015547184,0.0033098445281609656,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G4,lower_95ci percent,11.73,11.72557448352934,0.00442551647066125,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
+Figure 4,G4,upper_95ci percent,14.19,14.18513281382793,0.004867186172068827,0.01,True,standardized_365d_icu_readmission_cif_v1_2.csv
