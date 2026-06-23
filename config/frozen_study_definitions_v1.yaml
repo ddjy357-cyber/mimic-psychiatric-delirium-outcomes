@@ -8,8 +8,8 @@ study:
     - "No formal outcome regression, adjusted interaction model, covariate selection, P-value screening, or manuscript results were run at this freeze."
 
 data_sources:
-  mimic_iv_duckdb: "E:\\Codex\\SCI\\data\\mimiciv.duckdb"
-  mimic_iv_raw_directory: "E:\\Codex\\SCI\\data\\raw\\mimiciv"
+  mimic_iv_duckdb: "${MIMIC_DUCKDB}"
+  mimic_iv_raw_directory: "${MIMIC_RAW_DIR}"
   mimic_iv_version: "MIMIC-IV v3.1"
 
 base_population:
@@ -27,7 +27,7 @@ base_population:
 
 psychiatric_exposure:
   mapping_version: v1.1
-  mapping_file: "E:\\Codex\\SCI\\projects\\mental_delirium_longterm\\outputs\\psychiatric_code_validation\\psychiatric_code_mapping_validated_v1.1.csv"
+  mapping_file: "${PROJECT_DIR}\\outputs\\psychiatric_code_validation\\psychiatric_code_mapping_validated_v1.1.csv"
   mapping_sha256: "30297cf7415fe84e2a352adbf65e6310801034f64320310802f35db56baef954"
   source_versions:
     icd10:

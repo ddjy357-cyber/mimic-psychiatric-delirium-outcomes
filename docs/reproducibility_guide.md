@@ -1,24 +1,25 @@
-# Reproducibility Guide
+# Reproducibility Notes
+
+## Scope
+
+This release is an archival analysis-code and aggregate-results package. It preserves the scripts, frozen definitions, aggregate result files, figure source data, and final figures. It does not claim a single-command complete rebuild from a blank environment.
 
 ## Data access
 
-MIMIC-IV v3.1 must be obtained directly from PhysioNet by credentialed users. This repository does not redistribute MIMIC-IV data.
+MIMIC-IV v3.1 must be obtained directly from PhysioNet by credentialed users. This repository does not redistribute MIMIC-IV data or local DuckDB databases.
 
 ## Local database
 
-The scripts expect a local DuckDB database containing the MIMIC-IV v3.1 `hosp` and `icu` schemas. Provide the database path with:
+Full rebuilding requires a local DuckDB database containing the expected MIMIC-IV v3.1 `hosp` and `icu` schemas, MIT-LCP mimic-code derived concepts adapted to DuckDB, and the project dependency environment. Paths should be supplied through environment variables such as `${MIMIC_DUCKDB}`, `${PROJECT_DIR}`, and `${MIMIC_RAW_DIR}`.
+
+## Stage index
+
+`scripts/run_pipeline.py` is a stage index and environment-dependent helper. It can list the major project stages and optionally execute a selected stage in a prepared local environment. It is not an independently verified complete-rebuild pipeline.
 
 ```bash
-python scripts/run_pipeline.py --stage all --mimic-duckdb /path/to/mimiciv.duckdb
+python scripts/run_pipeline.py --list
+python scripts/run_pipeline.py --stage mortality --dry-run
 ```
-
-## Execution order
-
-1. `--stage cohort`
-2. `--stage mortality`
-3. `--stage readmission`
-4. `--stage sensitivity`
-5. `--stage figures`
 
 ## Expected key counts
 
@@ -27,7 +28,7 @@ python scripts/run_pipeline.py --stage all --mimic-duckdb /path/to/mimiciv.duckd
 - Conservative readmission cohort: 24,033.
 - Four groups: 13,909; 5,987; 6,067; 3,495.
 
-## Expected key results
+## Expected key final results
 
 - Mortality Model 2 HRs: G2 1.125; G3 1.466; G4 1.465.
 - 90-day same-system readmission Model 2 cause-specific HRs: G2 1.118; G3 1.121; G4 1.154.

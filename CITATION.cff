@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code or aggregate results, please cite this repository."
 title: "Documented Psychiatric Comorbidity, Early ICU Delirium, and Long-Term Outcomes Among Survivors of Critical Illness"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-06-23"
 authors:
   - family-names: "Long"
@@ -14,4 +14,4 @@ authors:
     email: "3324253@zju.edu.cn"
 repository-code: "https://github.com/[USER_OR_ORG]/mimic-psychiatric-delirium-outcomes"
 license: "MIT"
-abstract: "Public reproducibility code and aggregate results for a retrospective MIMIC-IV v3.1 cohort study of documented psychiatric comorbidity, early ICU delirium, and post-discharge outcomes."
+abstract: "Archival analysis code and aggregate results for a retrospective MIMIC-IV v3.1 cohort study of documented psychiatric comorbidity, early ICU delirium, and post-discharge outcomes."

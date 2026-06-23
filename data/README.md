@@ -1,10 +1,5 @@
 # Data Directory
 
-This public repository does not contain MIMIC-IV data, a DuckDB database, raw CSV files, or patient-level derived files.
+This directory contains public aggregate audit tables, validated code lists, and public metadata only. It contains no MIMIC-IV patient-level rows, no raw MIMIC files, no DuckDB database, and no subject-level identifiers.
 
-To reproduce the analyses, users must:
-
-1. Obtain credentialed access to MIMIC-IV v3.1 through PhysioNet.
-2. Download the dataset under the MIMIC-IV data use agreement.
-3. Build a local DuckDB database with the expected `hosp` and `icu` schemas.
-4. Provide the local database path to the pipeline with `--mimic-duckdb` or `MIMIC_DUCKDB`.
+Complete rebuilding requires credentialed local access to MIMIC-IV v3.1, the official MIT-LCP mimic-code concept library, and local project dependencies. This release does not provide an independently verified single-command complete-rebuild workflow.

@@ -480,27 +480,38 @@ def design_qc(raw_df: pd.DataFrame, formulas: dict[str, str], models: list[Fitte
 
 def compare_with_original(new_joint: pd.DataFrame) -> pd.DataFrame:
     old_path = ORIGINAL_DIR / "cox_joint_exposure_models.csv"
+    columns = [
+        "model",
+        "group",
+        "HR_v1",
+        "CI_lower_v1",
+        "CI_upper_v1",
+        "HR_v1_1",
+        "CI_lower_v1_1",
+        "CI_upper_v1_1",
+        "absolute_HR_difference",
+        "relative_HR_difference",
+        "comparison_status",
+    ]
+    if not old_path.exists():
+        return pd.DataFrame(
+            [{
+                "model": "not_applicable",
+                "group": "not_applicable",
+                "comparison_status": "skipped_missing_deprecated_v1_outputs",
+            }],
+            columns=columns,
+        )
     old = pd.read_csv(old_path)
     merged = old.merge(
         new_joint,
-        on=["model", "contrast"],
+        on=["model", "group"],
         suffixes=("_v1", "_v1_1"),
     )
-    out = merged[
-        [
-            "model",
-            "contrast",
-            "HR_v1",
-            "CI95_lower_v1",
-            "CI95_upper_v1",
-            "HR_v1_1",
-            "CI95_lower_v1_1",
-            "CI95_upper_v1_1",
-        ]
-    ].copy()
-    out["absolute_HR_difference"] = out["HR_v1_1"] - out["HR_v1"]
-    out["relative_HR_difference"] = out["absolute_HR_difference"] / out["HR_v1"]
-    return out
+    merged["absolute_HR_difference"] = merged["HR_v1_1"] - merged["HR_v1"]
+    merged["relative_HR_difference"] = merged["absolute_HR_difference"] / merged["HR_v1"]
+    merged["comparison_status"] = "completed"
+    return merged[columns]
 
 
 def fit_ph_tests(models: list[FittedCox]) -> pd.DataFrame:
@@ -1125,7 +1136,7 @@ def main() -> None:
     cox_joint = cox_joint_rows(models)
     cox_full = cox_full_coefficients(models)
     fit_stats = model_fit_stats(models)
-    comparison = compare_with_original(cox_joint)
+    comparison = compare_with_original(cox_joint)  # optional historical comparison; formal v1.1 outputs do not depend on v1 files
     write_csv(cox_joint, OUTPUT_DIR / "cox_joint_exposure_models_v1_1.csv")
     write_csv(cox_full, OUTPUT_DIR / "cox_full_coefficient_tables_v1_1.csv")
     write_csv(fit_stats, OUTPUT_DIR / "cox_model_fit_statistics_v1_1.csv")

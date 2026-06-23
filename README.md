@@ -1,12 +1,14 @@
 # mimic-psychiatric-delirium-outcomes
 
-Public code and aggregate results for:
+Archival analysis code and aggregate-results release, version v1.0.1.
 
 **Documented Psychiatric Comorbidity, Early ICU Delirium, and Long-Term Outcomes Among Survivors of Critical Illness: A Retrospective Cohort Study Using MIMIC-IV**
 
 ## Purpose
 
-This repository contains reproducible code, frozen study definitions, aggregate result files, figure source data, and manuscript support materials for a prognostic association study using MIMIC-IV v3.1. It does **not** contain patient-level data.
+This repository preserves the actual analysis scripts, frozen study definitions, aggregate result files, figure source data, and final public figures used for the study. It contains no patient-level data, no MIMIC-IV database, no raw MIMIC files, and no subject-level identifiers.
+
+This is an archival analysis-code and aggregate-results release. It is not an independently verified single-command complete-rebuild package. Complete rebuilding requires credentialed local access to MIMIC-IV v3.1, the official MIT-LCP mimic-code concept library, a compatible local DuckDB build, and the project-specific dependency environment.
 
 ## Joint Exposure Groups
 
@@ -25,7 +27,7 @@ This repository contains reproducible code, frozen study definitions, aggregate 
 
 MIMIC-IV version 3.1 is available to credentialed users through PhysioNet under its data use agreement. MIMIC-IV data are not redistributed here and are not licensed by this repository. Users must obtain their own credentialed access and comply with the MIMIC-IV data use agreement.
 
-This repository contains no MIMIC patient-level rows, no DuckDB database, no raw CSV exports, and no subject-level identifiers.
+Data availability statements intentionally retain GitHub and Zenodo placeholders until the public repository and archive DOI are created.
 
 ## Final Result Version Hierarchy
 
@@ -35,31 +37,25 @@ This repository contains no MIMIC patient-level rows, no DuckDB database, no raw
 - Sensitivity analyses: `03_sensitivity_analyses`.
 - Integrated results: `04_integrated_results`.
 
-Deprecated outputs from mortality v1 and readmission CIF v1/v1.1 are not formal results.
+Deprecated outputs from mortality v1 and readmission CIF v1/v1.1 are audit history only and are not formal results.
 
-## Quick Start
+## Local Use
+
+The helper at `scripts/run_pipeline.py` is a project-stage index and environment-dependent entry point. It lists the scripts used in each stage and can execute a selected stage only after the user supplies the required local environment and MIMIC-IV database path. It is not a single-command complete-rebuild workflow from a blank environment.
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r environment/requirements.txt
-python scripts/run_pipeline.py --stage all --project-dir . --mimic-duckdb <path-to-local-mimiciv.duckdb>
+python scripts/run_pipeline.py --list
+python scripts/run_pipeline.py --stage figures --dry-run
 ```
-
-Without a local MIMIC-IV v3.1 DuckDB database, the pipeline prints data-preparation guidance and does not pretend to reproduce patient-level analyses.
 
 ## Directory Guide
 
 - `config/`: frozen protocol, DAG, SAP, data dictionary, and study definitions.
-- `scripts/`: public reproducibility scripts using environment variables or command-line arguments for local paths.
+- `scripts/`: archival analysis and figure scripts with environment-variable based local paths.
 - `results/`: aggregate, non-patient-level final results and QC tables.
 - `figures/`: final figures, supplementary figures, graphical abstract, and figure source data.
-- `docs/`: reproducibility guide, privacy audit, code-list documentation, and Zenodo/GitHub manual steps.
-- `data/`: README only; no MIMIC data.
-
-## Reproduction Requirements
-
-A local MIMIC-IV v3.1 DuckDB database with the expected `hosp` and `icu` schemas is required for end-to-end reproduction. See `docs/reproducibility_guide.md`.
+- `docs/`: reproducibility notes, privacy audit, code-list documentation, traceability, and manual release steps.
+- `data/`: aggregate code lists and public audit tables only; no MIMIC data.
 
 ## Citation
 

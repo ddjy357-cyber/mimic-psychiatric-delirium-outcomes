@@ -705,98 +705,151 @@ def diagnostics(boot: pd.DataFrame, failures: pd.DataFrame) -> pd.DataFrame:
 
 
 def comparison_table(std: pd.DataFrame, additive: pd.DataFrame) -> pd.DataFrame:
+    columns = [
+        "result_family",
+        "outcome",
+        "model",
+        "group_or_metric",
+        "metric",
+        "v1_point_estimate",
+        "v1_ci_lower",
+        "v1_ci_upper",
+        "v1_ci_width",
+        "v1_1_point_estimate",
+        "v1_1_ci_lower",
+        "v1_1_ci_upper",
+        "v1_1_ci_width",
+        "v1_2_point_estimate",
+        "v1_2_ci_lower",
+        "v1_2_ci_upper",
+        "v1_2_ci_width",
+        "v1_2_minus_v1_1_point",
+        "v1_2_vs_v1_1_ci_width_change_percent",
+        "comparison_status",
+    ]
+    required = [
+        V1_OUTPUT_DIR / "standardized_90d_readmission_cif.csv",
+        V1_OUTPUT_DIR / "standardized_365d_icu_readmission_cif.csv",
+        V1_OUTPUT_DIR / "additive_interaction_readmission_90d.csv",
+        V1_OUTPUT_DIR / "additive_interaction_icu_readmission_365d.csv",
+        V11_OUTPUT_DIR / "standardized_90d_readmission_cif_v1_1.csv",
+        V11_OUTPUT_DIR / "standardized_365d_icu_readmission_cif_v1_1.csv",
+        V11_OUTPUT_DIR / "additive_interaction_readmission_90d_v1_1.csv",
+        V11_OUTPUT_DIR / "additive_interaction_icu_readmission_365d_v1_1.csv",
+    ]
+    missing = [str(p) for p in required if not p.exists()]
+    if missing:
+        return pd.DataFrame(
+            [{
+                "result_family": "historical_comparison",
+                "outcome": "not_applicable",
+                "model": "not_applicable",
+                "group_or_metric": "not_applicable",
+                "metric": "not_applicable",
+                "comparison_status": "skipped_missing_deprecated_v1_or_v1_1_outputs: " + "; ".join(missing),
+            }],
+            columns=columns,
+        )
+
     v1_std = pd.concat(
         [
-            pd.read_csv(V1_OUTPUT_DIR / "standardized_90d_readmission_cif.csv"),
-            pd.read_csv(V1_OUTPUT_DIR / "standardized_365d_icu_readmission_cif.csv"),
+            pd.read_csv(required[0]),
+            pd.read_csv(required[1]),
         ],
         ignore_index=True,
     )
     v1_add = pd.concat(
         [
-            pd.read_csv(V1_OUTPUT_DIR / "additive_interaction_readmission_90d.csv"),
-            pd.read_csv(V1_OUTPUT_DIR / "additive_interaction_icu_readmission_365d.csv"),
+            pd.read_csv(required[2]),
+            pd.read_csv(required[3]),
         ],
         ignore_index=True,
     )
     v11_std = pd.concat(
         [
-            pd.read_csv(V11_OUTPUT_DIR / "standardized_90d_readmission_cif_v1_1.csv"),
-            pd.read_csv(V11_OUTPUT_DIR / "standardized_365d_icu_readmission_cif_v1_1.csv"),
+            pd.read_csv(required[4]),
+            pd.read_csv(required[5]),
         ],
         ignore_index=True,
     )
     v11_add = pd.concat(
         [
-            pd.read_csv(V11_OUTPUT_DIR / "additive_interaction_readmission_90d_v1_1.csv"),
-            pd.read_csv(V11_OUTPUT_DIR / "additive_interaction_icu_readmission_365d_v1_1.csv"),
+            pd.read_csv(required[6]),
+            pd.read_csv(required[7]),
         ],
         ignore_index=True,
     )
     rows = []
     for _, r in std.iterrows():
-        old = v1_std[
-            v1_std["outcome"].eq(r["outcome"])
-            & v1_std["model"].eq(r["model"])
-            & v1_std["group"].eq(r["group"])
-        ].iloc[0]
-        prev = v11_std[
-            v11_std["outcome"].eq(r["outcome"])
-            & v11_std["model"].eq(r["model"])
-            & v11_std["group"].eq(r["group"])
-        ].iloc[0]
-        for metric, estimate_col, lower_col, upper_col in [
-            ("standardized_cif", "standardized_cif", "ci95_lower", "ci95_upper"),
-            ("risk_difference_vs_group1", "risk_difference_vs_group1", "risk_difference_ci95_lower", "risk_difference_ci95_upper"),
-            ("risk_ratio_vs_group1", "risk_ratio_vs_group1", "risk_ratio_ci95_lower", "risk_ratio_ci95_upper"),
-        ]:
-            old_width = float(old[upper_col] - old[lower_col])
-            prev_width = float(prev[upper_col] - prev[lower_col])
-            new_width = float(r[upper_col] - r[lower_col])
-            rows.append(
-                {
-                    "result_family": "standardized_cif",
-                    "outcome": r["outcome"],
-                    "model": r["model"],
-                    "group_or_metric": r["group"],
-                    "metric": metric,
-                    "v1_point_estimate": old[estimate_col],
-                    "v1_ci_lower": old[lower_col],
-                    "v1_ci_upper": old[upper_col],
-                    "v1_ci_width": old_width,
-                    "v1_1_point_estimate": prev[estimate_col],
-                    "v1_1_ci_lower": prev[lower_col],
-                    "v1_1_ci_upper": prev[upper_col],
-                    "v1_1_ci_width": prev_width,
-                    "v1_2_point_estimate": r[estimate_col],
-                    "v1_2_ci_lower": r[lower_col],
-                    "v1_2_ci_upper": r[upper_col],
-                    "v1_2_ci_width": new_width,
-                    "v1_2_minus_v1_1_point": r[estimate_col] - prev[estimate_col],
-                    "v1_2_vs_v1_1_ci_width_change_percent": 100.0 * (new_width - prev_width) / prev_width if prev_width != 0 else np.nan,
-                }
-            )
+        mask = (
+            v1_std["outcome"].eq(r["outcome"]) &
+            v1_std["model"].eq(r["model"]) &
+            v1_std["group"].eq(r["group"])
+        )
+        mask11 = (
+            v11_std["outcome"].eq(r["outcome"]) &
+            v11_std["model"].eq(r["model"]) &
+            v11_std["group"].eq(r["group"])
+        )
+        if not mask.any() or not mask11.any():
+            continue
+        old = v1_std[mask].iloc[0]
+        prev = v11_std[mask11].iloc[0]
+        estimate_col = "cif"
+        lower_col = "ci95_lower"
+        upper_col = "ci95_upper"
+        old_width = old[upper_col] - old[lower_col]
+        prev_width = prev[upper_col] - prev[lower_col]
+        new_width = r[upper_col] - r[lower_col]
+        rows.append(
+            {
+                "result_family": "standardized_cif",
+                "outcome": r["outcome"],
+                "model": r["model"],
+                "group_or_metric": r["group"],
+                "metric": estimate_col,
+                "v1_point_estimate": old[estimate_col],
+                "v1_ci_lower": old[lower_col],
+                "v1_ci_upper": old[upper_col],
+                "v1_ci_width": old_width,
+                "v1_1_point_estimate": prev[estimate_col],
+                "v1_1_ci_lower": prev[lower_col],
+                "v1_1_ci_upper": prev[upper_col],
+                "v1_1_ci_width": prev_width,
+                "v1_2_point_estimate": r[estimate_col],
+                "v1_2_ci_lower": r[lower_col],
+                "v1_2_ci_upper": r[upper_col],
+                "v1_2_ci_width": new_width,
+                "v1_2_minus_v1_1_point": r[estimate_col] - prev[estimate_col],
+                "v1_2_vs_v1_1_ci_width_change_percent": 100.0 * (new_width - prev_width) / prev_width if prev_width != 0 else np.nan,
+                "comparison_status": "completed_optional_historical_comparison",
+            }
+        )
     for _, r in additive.iterrows():
-        old = v1_add[
-            v1_add["outcome"].eq(r["outcome"])
-            & v1_add["model"].eq(r["model"])
-            & v1_add["metric"].eq(r["metric"])
-        ].iloc[0]
-        prev = v11_add[
-            v11_add["outcome"].eq(r["outcome"])
-            & v11_add["model"].eq(r["model"])
-            & v11_add["metric"].eq(r["metric"])
-        ].iloc[0]
-        old_width = float(old["ci95_upper"] - old["ci95_lower"])
-        prev_width = float(prev["ci95_upper"] - prev["ci95_lower"])
-        new_width = float(r["ci95_upper"] - r["ci95_lower"])
+        mask = (
+            v1_add["outcome"].eq(r["outcome"]) &
+            v1_add["model"].eq(r["model"]) &
+            v1_add["metric"].eq(r["metric"])
+        )
+        mask11 = (
+            v11_add["outcome"].eq(r["outcome"]) &
+            v11_add["model"].eq(r["model"]) &
+            v11_add["metric"].eq(r["metric"])
+        )
+        if not mask.any() or not mask11.any():
+            continue
+        old = v1_add[mask].iloc[0]
+        prev = v11_add[mask11].iloc[0]
+        old_width = old["ci95_upper"] - old["ci95_lower"]
+        prev_width = prev["ci95_upper"] - prev["ci95_lower"]
+        new_width = r["ci95_upper"] - r["ci95_lower"]
         rows.append(
             {
                 "result_family": "additive_interaction",
                 "outcome": r["outcome"],
                 "model": r["model"],
                 "group_or_metric": r["metric"],
-                "metric": r["metric"],
+                "metric": "estimate",
                 "v1_point_estimate": old["estimate"],
                 "v1_ci_lower": old["ci95_lower"],
                 "v1_ci_upper": old["ci95_upper"],
@@ -811,9 +864,10 @@ def comparison_table(std: pd.DataFrame, additive: pd.DataFrame) -> pd.DataFrame:
                 "v1_2_ci_width": new_width,
                 "v1_2_minus_v1_1_point": r["estimate"] - prev["estimate"],
                 "v1_2_vs_v1_1_ci_width_change_percent": 100.0 * (new_width - prev_width) / prev_width if prev_width != 0 else np.nan,
+                "comparison_status": "completed_optional_historical_comparison",
             }
         )
-    return pd.DataFrame(rows)
+    return pd.DataFrame(rows, columns=columns)
 
 
 def report(std: pd.DataFrame, additive: pd.DataFrame, diag: pd.DataFrame, failures: pd.DataFrame, comp: pd.DataFrame, validation: pd.DataFrame) -> None:
