@@ -2,17 +2,17 @@
 
 Status: pending GitHub authentication/release creation.
 
-After pushing `main` and `v1.0.1`:
+After pushing `main` and `v1.0.2`:
 
 1. Open the repository in GitHub.
 2. Go to **Releases**.
 3. Select **Draft a new release**.
-4. Choose tag `v1.0.1`.
+4. Choose tag `v1.0.2`.
 5. Use release title:
    `Code and aggregate results for psychiatric comorbidity, ICU delirium, and post-discharge outcomes`
-6. Paste the contents of `RELEASE_NOTES_v1.0.1.md` into the release body.
+6. Paste the contents of `RELEASE_NOTES_v1.0.2.md` into the release body.
 7. Upload:
-   - `<PROJECT_ROOT>\public_release_v1_0_1.zip`
+   - `<PROJECT_ROOT>\public_release_v1_0_2.zip`
    - `<LOCAL_PUBLIC_RELEASE_DIR>\SHA256SUMS.txt`
 8. Publish the release.
 9. Record the real GitHub repository URL and release URL.

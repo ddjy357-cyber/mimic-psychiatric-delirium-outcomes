@@ -7,10 +7,10 @@ After the GitHub release exists:
 1. Log in to Zenodo.
 2. Connect the real GitHub account or organization.
 3. Enable the repository `mimic-psychiatric-delirium-outcomes`.
-4. Import or wait for archival of the GitHub `v1.0.1` release.
+4. Import or wait for archival of the GitHub `v1.0.2` release.
 5. Verify metadata:
    - Type: Software
-   - Version: v1.0.1
+   - Version: v1.0.2
    - Title matches the public release
    - Authors and order are correct
    - License is correct
