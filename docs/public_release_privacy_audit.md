@@ -1,6 +1,6 @@
 # Public Release Privacy Audit
 
-Generated: 2026-06-23T01:38:04.163443+00:00
+Generated: 2026-06-23T01:39:39.908122+00:00
 
 | Check | Result |
 |---|---|
@@ -35,7 +35,6 @@ Generated: 2026-06-23T01:38:04.163443+00:00
 | data\psychiatric_mapping_provenance_v1.1.md | PASS |  |
 | data\README.md | PASS |  |
 | docs\Additional_File_RECORD_Algorithms_and_Code_Lists.md | PASS |  |
-| docs\build_summary.json | PASS |  |
 | docs\github_manual_steps.md | PASS |  |
 | docs\manuscript_figure_legends_v1.md | PASS |  |
 | docs\manuscript_methods_results_v1.md | PASS |  |
