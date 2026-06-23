@@ -1,0 +1,5 @@
+﻿cohort,group,label,n,death_365d_events,readmission_90d_events,icu_readmission_365d_events
+documented psych + 48h delirium classifiable cohort,1_no_primary_psych_no_delirium,No psychiatric comorbidity / no delirium,13375,1818,3102,1586
+documented psych + 48h delirium classifiable cohort,2_primary_psych_no_delirium,Psychiatric comorbidity / no delirium,5812,957,1686,796
+documented psych + 48h delirium classifiable cohort,3_no_primary_psych_delirium,No psychiatric comorbidity / delirium,5468,1317,1395,754
+documented psych + 48h delirium classifiable cohort,4_primary_psych_delirium,Psychiatric comorbidity / delirium,3179,762,928,421

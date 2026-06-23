@@ -1,0 +1,5 @@
+﻿outcome,model,planned_iterations,successful_iterations,failed_iterations,minimum_success_threshold,threshold_met,target_model_success_n,competing_death_model_success_n,cif_success_n,invalid_cif_n,interaction_metrics_not_computable_n,target_model_warning_iterations,competing_death_model_warning_iterations,model_refit_each_iteration,bootstrap_method,weights_sum_per_iteration,used_ridge,failure_rows_recorded,status
+readmission_90d,Model 1,1000,1000,0,950,True,1000,1000,1000,0,0,1,0,True,patient_level_integer_frequency_weights,24033,False,0,success
+readmission_90d,Model 2,1000,1000,0,950,True,1000,1000,1000,0,0,8,0,True,patient_level_integer_frequency_weights,24033,False,0,success
+icu_readmission_365d,Model 1,1000,1000,0,950,True,1000,1000,1000,0,0,1,3,True,patient_level_integer_frequency_weights,24033,False,0,success
+icu_readmission_365d,Model 2,1000,1000,0,950,True,1000,1000,1000,0,0,2,0,True,patient_level_integer_frequency_weights,24033,False,0,success

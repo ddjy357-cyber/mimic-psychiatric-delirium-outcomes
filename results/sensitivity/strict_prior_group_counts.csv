@@ -1,0 +1,5 @@
+﻿cohort,group,label,n,death_365d_events,readmission_90d_events,icu_readmission_365d_events
+strict-prior psych + 72h delirium primary mortality cohort,1_no_primary_psych_no_delirium,No psychiatric comorbidity / no delirium,17876,2392,4138,2062
+strict-prior psych + 72h delirium primary mortality cohort,2_primary_psych_no_delirium,Psychiatric comorbidity / no delirium,2020,434,801,378
+strict-prior psych + 72h delirium primary mortality cohort,3_no_primary_psych_delirium,No psychiatric comorbidity / delirium,8466,1947,2137,1103
+strict-prior psych + 72h delirium primary mortality cohort,4_primary_psych_delirium,Psychiatric comorbidity / delirium,1096,332,443,204

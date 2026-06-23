@@ -1,0 +1,5 @@
+﻿outcome,cause,model,test,reduced_log_likelihood,full_log_likelihood,chisq,df,p_value
+readmission_90d,target,Model 2,joint_exposure_time_varying_lrt,-60100.94565904038,-60097.48404396744,6.923230145883281,3,0.07438536208567202
+readmission_90d,competing_death,Model 2,joint_exposure_time_varying_lrt,-14457.692150355311,-14451.237804756774,12.908691197073495,3,0.004838284920498497
+icu_readmission_365d,target,Model 2,joint_exposure_time_varying_lrt,-31428.709698846884,-31421.49421379924,14.430970095287194,6,0.0251755186863538
+icu_readmission_365d,competing_death,Model 2,joint_exposure_time_varying_lrt,-28689.879690535883,-28656.461404829566,66.83657141263393,6,1.8177654925126845e-12

@@ -1,0 +1,14 @@
+Python: 3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]
+Platform: Windows-11-10.0.26200-SP0
+Executable: ${USER_HOME}\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+Rscript: not used for v1.1; Python implementation executed.
+
+    package version
+     duckdb   1.5.4
+     pandas   2.3.3
+      numpy   2.3.5
+  lifelines  0.30.3
+ matplotlib  3.11.0
+      patsy   1.0.2
+      scipy  1.18.0
+statsmodels  0.14.6

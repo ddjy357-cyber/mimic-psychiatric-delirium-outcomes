@@ -1,0 +1,37 @@
+﻿analysis,weight_strategy,n,events,cox_converged,logistic_converged,robust_sandwich_requested,robust_sandwich_computed,robust_sandwich_note,cox_warning,logistic_warning,cox_error,logistic_error
+ipsw_mortality,untrimmed,29455,5105,True,True,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_mortality,trim_1_99,29455,5105,True,True,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_mortality,trim_5_95,29455,5105,True,True,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_readmission_90d,untrimmed,24033,6321,True,,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_icu_readmission_365d,untrimmed,24033,3228,True,,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_readmission_90d,trim_1_99,24033,6321,True,,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_icu_readmission_365d,trim_1_99,24033,3228,True,,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_readmission_90d,trim_5_95,24033,6321,True,,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,
+ipsw_icu_readmission_365d,trim_5_95,24033,3228,True,,True,False,lifelines robust weighted Cox did not complete in feasible runtime; weighted Cox point estimate with model-based CI reported,"It appears your weights are not integers, possibly propensity or sampling scores then?
+It's important to know that the naive variance estimates of the coefficients are biased. Instead a) set `robust=True` in the call to `fit`, or b) use Monte Carlo to
+estimate the variances. See paper ""Variance estimation when using inverse probability of treatment weighting (IPTW) with survival analysis""
+",,,

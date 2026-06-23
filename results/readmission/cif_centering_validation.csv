@@ -1,0 +1,23 @@
+﻿validation_type,outcome,cause,model,interval_label,n_checked,max_abs_error,max_relative_error,passed,details
+non_time_varying_cumulative_hazard,readmission_90d,target,Model 1,not_applicable,2500,3.3306690738754696e-16,5.234723144738471e-16,True,uncentered baseline times exp(X beta) vs lifelines predict_cumulative_hazard
+non_time_varying_partial_hazard,readmission_90d,target,Model 1,not_applicable,100,0.0,0.0,True,exp((X - mean_X) beta) vs lifelines predict_partial_hazard
+baseline_conversion,readmission_90d,target,Model 1,not_applicable,1718,2.7755575615628914e-17,1.3291328354266734e-16,True,uncentered baseline times exp(mean_X beta) vs lifelines centered baseline
+non_time_varying_cumulative_hazard,readmission_90d,target,Model 2,not_applicable,2500,6.661338147750939e-16,6.367321817690271e-16,True,uncentered baseline times exp(X beta) vs lifelines predict_cumulative_hazard
+non_time_varying_partial_hazard,readmission_90d,target,Model 2,not_applicable,100,0.0,0.0,True,exp((X - mean_X) beta) vs lifelines predict_partial_hazard
+baseline_conversion,readmission_90d,target,Model 2,not_applicable,1718,2.7755575615628914e-17,1.2467195510124222e-16,True,uncentered baseline times exp(mean_X beta) vs lifelines centered baseline
+time_varying_partial_hazard,readmission_90d,competing_death,Model 1,0_30_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,readmission_90d,competing_death,Model 1,30_90_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,readmission_90d,competing_death,Model 2,0_30_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,readmission_90d,competing_death,Model 2,30_90_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,target,Model 1,0_30_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,target,Model 1,30_90_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,target,Model 1,90_365_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,target,Model 2,0_30_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,target,Model 2,30_90_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,target,Model 2,90_365_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,competing_death,Model 1,0_30_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,competing_death,Model 1,30_90_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,competing_death,Model 1,90_365_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,competing_death,Model 2,0_30_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,competing_death,Model 2,30_90_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard
+time_varying_partial_hazard,icu_readmission_365d,competing_death,Model 2,90_365_days,100,0.0,0.0,True,exp((X_interval - mean_X_long) beta) vs CoxTimeVaryingFitter predict_partial_hazard

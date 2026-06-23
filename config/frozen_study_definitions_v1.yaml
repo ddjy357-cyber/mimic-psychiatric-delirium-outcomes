@@ -1,0 +1,175 @@
+study:
+  project_name: mental_delirium_longterm
+  project_status: "Exposure definitions frozen; ready for Protocol, DAG, variable dictionary, and statistical analysis plan."
+  freeze_version: v1
+  freeze_date: "2026-06-19"
+  timezone: Asia/Shanghai
+  notes:
+    - "No formal outcome regression, adjusted interaction model, covariate selection, P-value screening, or manuscript results were run at this freeze."
+
+data_sources:
+  mimic_iv_duckdb: "E:\\Codex\\SCI\\data\\mimiciv.duckdb"
+  mimic_iv_raw_directory: "E:\\Codex\\SCI\\data\\raw\\mimiciv"
+  mimic_iv_version: "MIMIC-IV v3.1"
+
+base_population:
+  description: "Adult first ICU stay, ICU LOS >=24 hours, survived to hospital discharge."
+  inclusion_criteria:
+    - "patients.anchor_age >= 18"
+    - "first ICU stay per subject_id"
+    - "ICU length of stay >= 24 hours"
+    - "hospital_expire_flag = 0"
+  first_icu_selection: "row_number over subject_id ordered by intime, stay_id equals 1"
+  age_variable: "hosp.patients.anchor_age"
+  base_population_n: 46316
+  final_72h_delirium_classifiable_n: 29458
+  final_72h_delirium_unclassifiable_n: 16858
+
+psychiatric_exposure:
+  mapping_version: v1.1
+  mapping_file: "E:\\Codex\\SCI\\projects\\mental_delirium_longterm\\outputs\\psychiatric_code_validation\\psychiatric_code_mapping_validated_v1.1.csv"
+  mapping_sha256: "30297cf7415fe84e2a352adbf65e6310801034f64320310802f35db56baef954"
+  source_versions:
+    icd10:
+      name: "AHRQ CCSR for ICD-10-CM Diagnoses"
+      version: "v2026.1"
+      download_date: "2026-06-19"
+      source_url: "https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp"
+      source_file: "DXCCSR-v2026-1.zip"
+      source_file_sha256: "093EA8F925606EEA74A9342395EED440E7635293D0ABF031D8C89D1183CDE310"
+    icd9:
+      name: "AHRQ HCUP Single-Level CCS for ICD-9-CM Diagnoses"
+      version: "2015"
+      download_date: "2026-06-19"
+      source_url: "https://hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp"
+      source_file: "Single_Level_CCS_2015.zip"
+      source_file_sha256: "A1E31709CC4FA7D67FC254A7421EC9686030098AF9225D5F7BA73AE28DEAA283"
+  primary_psychiatric_comorbidity:
+    included_categories:
+      - depressive_disorders
+      - anxiety_disorders
+      - trauma_and_stressor_related_disorders
+      - bipolar_disorders
+      - schizophrenia_spectrum_and_other_psychotic_disorders
+    excluded_from_primary:
+      - dementia_cognitive_disorders
+      - alcohol_related_disorders
+      - other_substance_related_disorders
+      - secondary_psychiatric_due_to_physiological_condition
+      - other_psychiatric_disorders
+      - delirium
+      - tobacco_or_nicotine_disorders
+      - symptoms_or_history_codes_not_indicating_active_primary_psychiatric_comorbidity
+      - drug_induced_or_substance_induced_psychiatric_disorders
+  timing_definitions:
+    strict_prior: "Primary psychiatric code appears in a MIMIC hospital admission before the index hospital admission."
+    documented_by_index: "Primary psychiatric code appears before the index admission or during the index hospital admission."
+    index_admission_only: "documented_by_index is true and strict_prior is false."
+  clinical_priority_rules:
+    - "ICD-10 F06 family is excluded from primary exposure before any MBD001/MBD002/MBD003/MBD005 assignment."
+    - "Dementia/cognitive disorder families are separate non-primary categories."
+    - "Alcohol and other substance-related disorders are separate non-primary categories."
+    - "Trauma/stressor main exposure is restricted to ICD-10 F43 and ICD-9 308/309 acute stress reaction, PTSD, or adjustment-family codes; ICD-9 30921 is excluded."
+    - "F44, F48.1, and F94 MBD007 codes are kept as other_psychiatric_disorders and excluded from primary exposure."
+    - "Each icd_code plus icd_version receives one clinical_priority_category for primary exposure counting."
+  counts:
+    primary_documented_by_index_n: 13895
+    primary_strict_prior_n: 4526
+    primary_index_admission_only_n: 9369
+
+delirium_exposure:
+  primary_definition_name: final_72h_early_icu_delirium
+  source_itemid: 228332
+  source_item_label: "Delirium assessment"
+  window: "ICU admission to 72 hours after ICU intime"
+  positive_definition: "At least one Positive value for itemid 228332 within the 72-hour window."
+  negative_definition:
+    - "No Positive value within the 72-hour window."
+    - "At least two different natural days with valid Negative values within the 72-hour window."
+    - "UTA is not counted as Negative."
+  rass_conflict_rule:
+    observed_rass_itemid: 228096
+    observed_rass_item_label: "Richmond-RAS Scale"
+    matching_window: "+/-1 hour around each Delirium assessment"
+    invalid_negative_rule: "Negative Delirium assessment matched to observed RASS <= -4 within +/-1 hour is not valid negative evidence."
+    goal_rass_used: false
+  sensitivity_48h_definition:
+    name: final_48h_early_icu_delirium_sensitivity
+    window: "ICU admission to 48 hours after ICU intime"
+    positive_definition: "At least one Positive value for itemid 228332 within the 48-hour window."
+    negative_definition:
+      - "No Positive value within the 48-hour window."
+      - "At least two different natural days with valid Negative values within the 48-hour window."
+      - "UTA is not counted as Negative."
+      - "Negative matched to observed RASS <= -4 within +/-1 hour is not valid negative evidence."
+
+four_groups:
+  exposure_variables:
+    psychiatric: "primary_psychiatric_comorbidity documented_by_index using v1.1 mapping"
+    delirium: "final_72h_early_icu_delirium"
+  definitions:
+    "1_no_primary_psych_no_delirium": "No primary psychiatric comorbidity and final 72h delirium-negative."
+    "2_primary_psych_no_delirium": "Primary psychiatric comorbidity and final 72h delirium-negative."
+    "3_no_primary_psych_delirium": "No primary psychiatric comorbidity and final 72h delirium-positive."
+    "4_primary_psych_delirium": "Primary psychiatric comorbidity and final 72h delirium-positive."
+  current_counts:
+    "1_no_primary_psych_no_delirium": 13909
+    "2_primary_psych_no_delirium": 5987
+    "3_no_primary_psych_delirium": 6067
+    "4_primary_psych_delirium": 3495
+    total_classifiable: 29458
+    excluded_unclassifiable_delirium: 16858
+
+outcomes:
+  time_zero: "index hospital discharge"
+  primary:
+    - "1-year all-cause mortality after hospital discharge"
+  secondary:
+    - "30-day all-cause mortality after hospital discharge"
+    - "90-day all-cause mortality after hospital discharge"
+    - "30-day same-system hospital readmission"
+    - "90-day same-system hospital readmission"
+    - "1-year same-system hospital readmission"
+    - "1-year same-system ICU readmission"
+  exploratory:
+    - "Unadjusted crude RR/RERI/AP/synergy index descriptions"
+    - "48-hour delirium sensitivity definition"
+    - "strict-prior psychiatric exposure sensitivity"
+    - "index-admission-only psychiatric timing description"
+  outcome_notes:
+    - "Same-system readmission does not capture admissions outside the MIMIC system."
+    - "Same-admission repeat ICU stays are not counted as post-discharge ICU readmission."
+    - "MIMIC-IV-ED standalone ED visits are not used."
+
+sap_pending_items:
+  same_day_dod:
+    status: "pending SAP decision"
+    observed_count_in_base_population: 144
+    issue: "Whether DOD equal to discharge date should be excluded, included in 1-year death, or handled in sensitivity analysis."
+  hospice_discharge:
+    status: "pending SAP decision"
+    observed_count_in_base_population: 1205
+    one_year_death_rate_percent: 85.56
+    issue: "Whether hospice discharge should be excluded, adjusted, stratified, or handled in sensitivity analysis."
+
+frozen_items_requiring_protocol_and_sap_amendment_to_change:
+  - "base population inclusion/exclusion criteria"
+  - "first ICU stay selection rule"
+  - "psychiatric_code_mapping_validated_v1.1.csv and its clinical_priority_category rules"
+  - "primary psychiatric comorbidity included and excluded categories"
+  - "documented_by_index, strict_prior, and index_admission_only definitions"
+  - "72-hour primary delirium definition"
+  - "48-hour sensitivity delirium definition"
+  - "Observed RASS <= -4 within +/-1 hour invalid-negative rule"
+  - "four-group exposure definitions"
+  - "primary, secondary, and exploratory outcome definitions"
+  - "time zero at index hospital discharge"
+
+prohibited_without_formal_protocol_and_sap_revision:
+  - "formal outcome regression"
+  - "adjusted interaction model"
+  - "automatic covariate selection"
+  - "P-value based definition screening"
+  - "modification of psychiatric mapping"
+  - "modification of 72-hour delirium definition"
+  - "manuscript results writing"

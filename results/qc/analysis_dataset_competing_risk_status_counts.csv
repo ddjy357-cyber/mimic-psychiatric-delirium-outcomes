@@ -1,0 +1,13 @@
+﻿outcome,population,status,status_label,n,denominator,percent
+icu_readmission_365d,conservative_readmission_cohort,0,no_target_event_no_competing_death,17728,24033,73.765
+icu_readmission_365d,conservative_readmission_cohort,1,target_event,3228,24033,13.432
+icu_readmission_365d,conservative_readmission_cohort,2,competing_death_before_target_event,3077,24033,12.803
+icu_readmission_365d,full_classifiable_cohort,0,no_target_event_no_competing_death,21835,29458,74.122
+icu_readmission_365d,full_classifiable_cohort,1,target_event,3747,29458,12.72
+icu_readmission_365d,full_classifiable_cohort,2,competing_death_before_target_event,3876,29458,13.158
+readmission_90d,conservative_readmission_cohort,0,no_target_event_no_competing_death,16132,24033,67.124
+readmission_90d,conservative_readmission_cohort,1,target_event,6321,24033,26.301
+readmission_90d,conservative_readmission_cohort,2,competing_death_before_target_event,1580,24033,6.574
+readmission_90d,full_classifiable_cohort,0,no_target_event_no_competing_death,20000,29458,67.893
+readmission_90d,full_classifiable_cohort,1,target_event,7519,29458,25.524
+readmission_90d,full_classifiable_cohort,2,competing_death_before_target_event,1939,29458,6.582

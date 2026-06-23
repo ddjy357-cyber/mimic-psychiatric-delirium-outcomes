@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.duckdb
+*.db
+*.sqlite
+data/raw/
+data/mimiciv/
+*.csv.gz
+*.parquet
+*.pkl
+*.rds
+*.token
+*.secret

@@ -1,0 +1,3 @@
+﻿outcome,model,term,HR,CI95_lower,CI95_upper,wald_p_value,interaction_lrt_chisq,interaction_lrt_df,interaction_lrt_p_value,analysis_n,event_n,penalizer
+icu_readmission_365d,Model 1,psych_primary_documented_by_index:delirium_binary,0.848392798514086,0.7278795913560208,0.9888590765811268,0.035440627061744015,4.4420654515051865,1,0.03506380262891932,24033,3228,0.0
+icu_readmission_365d,Model 2,psych_primary_documented_by_index:delirium_binary,0.8484051490551135,0.7278849796480444,0.9888805471590737,0.03546548365470471,4.440863576201082,1,0.03508849453546165,24033,3228,0.0

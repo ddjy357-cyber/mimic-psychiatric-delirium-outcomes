@@ -1,0 +1,8 @@
+{
+  "elapsed_seconds": 45.47,
+  "base_population_n": 46316,
+  "primary_analysis_n": 29458,
+  "conservative_readmission_n": 24033,
+  "strict_prior_direction_vs_primary_mortality": "direction comparison unavailable",
+  "delirium_48h_direction_vs_primary_mortality": "direction comparison unavailable"
+}

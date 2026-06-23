@@ -1,0 +1,6 @@
+﻿joint_exposure_4level,n,death_365d_main_n,death_365d_main_percent,readmission_90d_n,readmission_90d_percent,icu_readmission_365d_n,icu_readmission_365d_percent
+1_no_primary_psych_no_delirium,13909,1854,13.329,3216,23.122,1633,11.741
+2_primary_psych_no_delirium,5987,972,16.235,1723,28.779,807,13.479
+3_no_primary_psych_delirium,6067,1452,23.933,1548,25.515,829,13.664
+4_primary_psych_delirium,3495,827,23.662,1032,29.528,478,13.677
+excluded_unclassifiable_delirium,16858,2432,14.426,4385,26.011,2181,12.937

@@ -1,0 +1,6 @@
+﻿metric,n
+table1_population_n,29458
+primary_mortality_model_n,29366
+excluded_same_day_dod_n,89
+excluded_death_date_logic_abnormal_n,3
+primary_mortality_model_1y_death_events_n,5105

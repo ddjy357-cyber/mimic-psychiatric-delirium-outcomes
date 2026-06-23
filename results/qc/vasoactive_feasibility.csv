@@ -1,0 +1,12 @@
+﻿concept_table,table_row_count,duplicate_interval_key_count,status,metric,denominator,patient_count,percent
+dobutamine,10264,0,built_from_official_duckdb_sql,,,,
+dopamine,18085,0,built_from_official_duckdb_sql,,,,
+epinephrine,31495,0,built_from_official_duckdb_sql,,,,
+norepinephrine,459800,1,built_from_official_duckdb_sql,,,,
+phenylephrine,209376,1,built_from_official_duckdb_sql,,,,
+vasopressin,37163,0,built_from_official_duckdb_sql,,,,
+milrinone,10668,0,built_from_official_duckdb_sql,,,,
+vasoactive_agent,839543,2444,built_from_official_duckdb_sql,,,,
+norepinephrine_equivalent_dose,783613,2413,built_from_official_duckdb_sql,,,,
+,,,,first_24h_vasoactive_any,46316,13295,28.7
+,,,,first_24h_vasoactive_any_classifiable,29458,7998,27.15

@@ -1,0 +1,6 @@
+﻿window_population,denominator,complete_case_n,partial_missing_n,zero_imputed_min,zero_imputed_median,zero_imputed_max,pearson_corr_with_complete_sofa,complete_0_6h_n,candidate_strategy,description,sap_decision_required
+0_24h_base_population,46316,9122,37194,0,3,19,0.9424368614306285,3525,,,
+0_24h_classifiable_72h_population,29458,6024,23434,0,3,19,0.9488106801017995,,,,
+candidate_missing_strategy,,,,,,,,,complete_case,Use only patients with all five non-neurologic organ components observed.,True
+candidate_missing_strategy,,,,,,,,,missing_component_as_zero,Official first-day SOFA total uses zero for missing components; may understate severity.,True
+candidate_missing_strategy,,,,,,,,,multiple_imputation_or_missing_indicators,Prespecify if non-neurologic SOFA enters adjusted models.,True

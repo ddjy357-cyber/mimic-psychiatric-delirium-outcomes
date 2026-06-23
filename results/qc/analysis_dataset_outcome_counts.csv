@@ -1,0 +1,4 @@
+﻿population,n,death_365d_main_n,readmission_90d_n,icu_readmission_365d_n
+primary_analysis_cohort,29458,5105,7519,3747
+conservative_readmission_cohort,24033,4143,6321,3228
+base_population,46316,7537,11904,5928

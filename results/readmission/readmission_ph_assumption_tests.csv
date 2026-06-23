@@ -1,0 +1,75 @@
+﻿outcome,cause,model,test_scope,term,test_statistic,df,p_value,formal_status
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.ed],1.2509749797117125,1,0.26336634312459495,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.other-unknown],0.1883913496688896,1,0.6642588690669182,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.procedure],1.1299954042357097,1,0.2877763191725573,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.transfer-facility],0.9633409280764131,1,0.32634656633388304,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.transfer-hospital],0.6988930766121375,1,0.4031558866768987,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_type_group)[T.observation],1.3425933972906623,1,0.24657713471740844,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_type_group)[T.urgent-emergency],1.1511224177413009,1,0.2833143115171117,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(anchor_year_group)[T.2011 - 2013],0.2568756392164791,1,0.6122748037355175,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(anchor_year_group)[T.2014 - 2016],0.5923296983868849,1,0.44151965020292605,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(anchor_year_group)[T.2017 - 2019],0.7648552738601593,1,0.3818133352112446,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.MICU],8.775145069861455,1,0.003053628709236048,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.Mixed-other],4.435587629354077,1,0.03519710146796899,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.Neuro],6.386854734883847,1,0.011496856434800506,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.SICU],4.897944997628384,1,0.02688867499949182,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.Trauma],0.02931623946459219,1,0.8640508943410727,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(joint_exposure_4level, Treatment(reference='1_no_primary_psych_no_delirium'))[T.2_primary_psych_no_delirium]",1.8539225170639322,1,0.17332787075501543,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(joint_exposure_4level, Treatment(reference='1_no_primary_psych_no_delirium'))[T.3_no_primary_psych_delirium]",1.5721521443798439,1,0.20989474526490615,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(joint_exposure_4level, Treatment(reference='1_no_primary_psych_no_delirium'))[T.4_primary_psych_delirium]",14.933956481227524,1,0.00011134081548048529,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.1]",2.026274852658275,1,0.15459913754592075,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.2]",0.2817688680325809,1,0.595544174962639,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.3]",1.9834060149577173,1,0.1590320495716186,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.4]",0.08965184804030643,1,0.7646202261149306,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Black],1.746342511379279,1,0.18633719106920063,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Hispanic-Latino],2.795744529640794,1,0.09451485638894502,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Other-Multiple],0.42995752080889615,1,0.5120097928682663,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Unknown-Unable],1.1756661109802222,1,0.2782400585194328,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.White],0.9428501033398073,1,0.3315459442908873,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,C(sex_recorded)[T.M],4.804127049862091,1,0.028391647265777826,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,charlson_comorbidity_only_documented_by_index,26.606068188908296,1,2.494590088783815e-07,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,chronic_neurologic_disease,0.3173082267562627,1,0.5732298102965256,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"cr(age_at_index_admission, knots=(60, 72), lower_bound=31, upper_bound=89, constraints='center')[0]",13.206974840432563,1,0.0002789091991336242,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"cr(age_at_index_admission, knots=(60, 72), lower_bound=31, upper_bound=89, constraints='center')[1]",2.4331591050776127,1,0.11879328058319244,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,"cr(age_at_index_admission, knots=(60, 72), lower_bound=31, upper_bound=89, constraints='center')[2]",2.4781718454106323,1,0.11543635954606803,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,dementia_documented_by_index,0.00017118025750912798,1,0.9895611054897704,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,log1p_prior_mimic_hospitalizations,13.734335070026466,1,0.00021056961280012078,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,nonneurologic_sofa_zero_imputed,0.6081834892053255,1,0.4354725794476999,auxiliary_only
+readmission_90d,target,Model 2,individual_term_auxiliary_schoenfeld,substance_use_documented_by_index,0.020942806518605903,1,0.8849348717386356,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.ed],2.274161757859271,1,0.13154623159603457,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.other-unknown],0.7256699114003415,1,0.394290349651776,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.procedure],0.5303754539429392,1,0.4664490536302921,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.transfer-facility],3.2639062531244565,1,0.07082023497450839,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_location_group)[T.transfer-hospital],1.6844310595065828,1,0.1943367079012034,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_type_group)[T.observation],1.2609984744360678,1,0.26146217760297297,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(admission_type_group)[T.urgent-emergency],0.3814749131056335,1,0.5368149429764073,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(anchor_year_group)[T.2011 - 2013],0.15768057307265057,1,0.6913009964048398,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(anchor_year_group)[T.2014 - 2016],0.5570744509686775,1,0.4554413981782126,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(anchor_year_group)[T.2017 - 2019],0.38199408620970554,1,0.5365379626102856,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.MICU],4.29240764170623,1,0.038282916847138575,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.Mixed-other],0.10274735824261401,1,0.7485572790096207,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.Neuro],2.141309421131665,1,0.1433794639240517,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.SICU],0.008090699173601926,1,0.9283282877833258,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(first_careunit_group)[T.Trauma],1.4640716655716335,1,0.22628338570829884,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(joint_exposure_4level, Treatment(reference='1_no_primary_psych_no_delirium'))[T.2_primary_psych_no_delirium]",0.810347171200328,1,0.3680176293342987,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(joint_exposure_4level, Treatment(reference='1_no_primary_psych_no_delirium'))[T.3_no_primary_psych_delirium]",5.599713034830406,1,0.017963419625954012,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(joint_exposure_4level, Treatment(reference='1_no_primary_psych_no_delirium'))[T.4_primary_psych_delirium]",0.7323227430614102,1,0.39213133162299807,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.1]",0.8275507492774106,1,0.36298171282130776,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.2]",0.2305565026799907,1,0.6311114968420541,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.3]",3.2129824320185567,1,0.0730562046513448,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"C(nonneurologic_sofa_observed_components_n, Treatment(reference=5))[T.4]",4.878371424706492,1,0.027195266519177454,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Black],1.2789270516585547,1,0.258098627219744,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Hispanic-Latino],0.09347862796289037,1,0.7598005226170769,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Other-Multiple],1.4178306886852765,1,0.233760791296057,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.Unknown-Unable],4.859584761481128,1,0.027492952307097866,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(race_group)[T.White],0.0020953602639740485,1,0.9634895011093838,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,C(sex_recorded)[T.M],3.45461270105688,1,0.0630755104732379,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,charlson_comorbidity_only_documented_by_index,9.774595129909182,1,0.00176939679379184,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,chronic_neurologic_disease,0.051010116477286614,1,0.8213148259796731,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"cr(age_at_index_admission, knots=(60, 72), lower_bound=31, upper_bound=89, constraints='center')[0]",0.9086157190889829,1,0.3404819761340833,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"cr(age_at_index_admission, knots=(60, 72), lower_bound=31, upper_bound=89, constraints='center')[1]",8.108560858107294,1,0.004405669021837092,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,"cr(age_at_index_admission, knots=(60, 72), lower_bound=31, upper_bound=89, constraints='center')[2]",2.1261754315174426,1,0.14480165814782325,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,dementia_documented_by_index,1.885613261878728,1,0.16969753304179339,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,log1p_prior_mimic_hospitalizations,18.243718055552147,1,1.94365912719474e-05,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,nonneurologic_sofa_zero_imputed,0.08005108938728794,1,0.7772281879961986,auxiliary_only
+icu_readmission_365d,target,Model 2,individual_term_auxiliary_schoenfeld,substance_use_documented_by_index,3.0355370439704354,1,0.08145958951837524,auxiliary_only

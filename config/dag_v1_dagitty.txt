@@ -1,0 +1,107 @@
+dag {
+title "Psychiatric comorbidity, early ICU delirium, and long-term outcomes"
+
+C_demo [label="Demographic and structural factors"]
+C_social [label="Social context and healthcare access", latent]
+C_chronic [label="Chronic disease and frailty"]
+C_dementia [label="Dementia/chronic neurologic disease"]
+C_substance [label="Alcohol/substance use"]
+C_priorutil [label="Prior healthcare utilization"]
+C_acute [label="Acute illness type and early severity"]
+C_practice [label="Calendar year, ICU type, assessment practice"]
+
+P_true [label="True pre-existing psychiatric illness", latent]
+P_doc [label="Documented psychiatric comorbidity", exposure]
+D [label="Early ICU delirium", exposure]
+
+M_icu [label="Subsequent ICU treatment and illness course"]
+M_discharge [label="Hospice, discharge destination, transition care"]
+M_post [label="Post-discharge care and adherence", latent]
+
+S_class [label="Delirium classifiable", selected]
+S_survival [label="Survived to hospital discharge", selected]
+
+Y_death [label="One-year mortality", outcome]
+Y_readmit [label="90-day same-system readmission"]
+Y_icureturn [label="One-year same-system ICU readmission"]
+
+C_demo -> P_true
+C_demo -> C_chronic
+C_demo -> C_acute
+C_demo -> Y_death
+C_demo -> Y_readmit
+
+C_social -> P_true
+C_social -> C_chronic
+C_social -> C_priorutil
+C_social -> Y_death
+C_social -> Y_readmit
+
+C_priorutil -> P_doc
+C_priorutil -> Y_readmit
+C_priorutil -> Y_icureturn
+
+C_chronic -> P_true
+C_chronic -> C_acute
+C_chronic -> D
+C_chronic -> Y_death
+C_chronic -> Y_readmit
+
+C_dementia -> D
+C_dementia -> Y_death
+C_dementia -> Y_readmit
+C_dementia -> S_class
+
+C_substance -> P_true
+C_substance -> C_acute
+C_substance -> D
+C_substance -> Y_death
+C_substance -> Y_readmit
+
+P_true -> P_doc
+P_true -> D
+P_true -> M_post
+P_true -> Y_death
+P_true -> Y_readmit
+
+C_acute -> D
+C_acute -> M_icu
+C_acute -> S_class
+C_acute -> S_survival
+C_acute -> Y_death
+C_acute -> Y_readmit
+C_acute -> Y_icureturn
+
+C_practice -> P_doc
+C_practice -> D
+C_practice -> S_class
+C_practice -> M_icu
+C_practice -> Y_death
+C_practice -> Y_readmit
+
+D -> P_doc
+D -> S_class
+D -> M_icu
+D -> M_discharge
+D -> Y_death
+D -> Y_readmit
+D -> Y_icureturn
+
+P_true -> M_discharge
+
+M_icu -> M_discharge
+M_icu -> S_survival
+M_icu -> Y_death
+
+M_discharge -> M_post
+M_discharge -> Y_death
+M_discharge -> Y_readmit
+M_discharge -> Y_icureturn
+
+M_post -> Y_death
+M_post -> Y_readmit
+M_post -> Y_icureturn
+
+P_true -> S_survival
+D -> S_survival
+}

@@ -1,0 +1,6 @@
+﻿outcome,time_window,term,HR,CI95_lower,CI95_upper,wald_p_value,analysis_n,event_n,penalizer
+readmission_90d,0_30_days,psych_primary_documented_by_index:delirium_binary,0.9252928890013659,0.8077048445639408,1.0599997464404423,0.2628452929836809,23877,4126,0.0
+readmission_90d,30_90_days,psych_primary_documented_by_index:delirium_binary,0.8393034415432422,0.692473022930271,1.017267451092118,0.07418425759663771,18681,2039,0.0
+icu_readmission_365d,0_30_days,psych_primary_documented_by_index:delirium_binary,0.8229458543507447,0.6395380491564775,1.0589516606343075,0.12984319714201983,24021,1220,0.0
+icu_readmission_365d,30_90_days,psych_primary_documented_by_index:delirium_binary,0.858684872968521,0.6398941900541684,1.1522838033621585,0.3099497957369796,21623,832,0.0
+icu_readmission_365d,90_365_days,psych_primary_documented_by_index:delirium_binary,0.8901403072724198,0.6867539661946293,1.153760743489441,0.37923850036456963,20087,1164,0.0

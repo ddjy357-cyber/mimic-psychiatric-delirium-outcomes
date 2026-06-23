@@ -1,0 +1,9 @@
+﻿qc_check,checked_n,fail_n,pass
+readmission_status1_time_equals_target_event_time,11904,0,True
+readmission_status2_time_equals_death_time,2873,0,True
+readmission_status0_time_equals_90,31539,0,True
+readmission_no_target_and_competing_death_double_code,46316,0,True
+icu_readmission_status1_time_equals_target_event_time,5928,0,True
+icu_readmission_status2_time_equals_death_time,5678,0,True
+icu_readmission_status0_time_equals_365,34710,0,True
+icu_readmission_no_target_and_competing_death_double_code,46316,0,True

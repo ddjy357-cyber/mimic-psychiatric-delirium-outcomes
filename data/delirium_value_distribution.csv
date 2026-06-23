@@ -1,0 +1,89 @@
+itemid,label,abbreviation,category,param_type,candidate_role,value,valuenum,value_class,record_count,stay_count,subject_count,percent_within_itemid
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Alert,,not_delirium_specific,266712,20964,15465,52.029
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Arouse to Voice,,not_delirium_specific,98492,12476,10119,19.213
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Unresponsive,,not_delirium_specific,42283,6020,5624,8.248
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Arouse to Stimulation,,not_delirium_specific,40605,5912,5206,7.921
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Lethargic,,not_delirium_specific,36293,8141,6794,7.08
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Arouse to Pain,,not_delirium_specific,24113,4210,3827,4.704
+226104,Level of Consciousness,Level of Consciousness,Neurological,Text,consciousness_supporting_item,Awake/Unresponsive,,not_delirium_specific,4126,956,922,0.805
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale, 0  Alert and calm,0,rass_other_observed,787684,76607,54306,47.565
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,-1 Awakens to voice (eye opening/contact) > 10 sec,-1,rass_other_observed,279320,45708,35449,16.867
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-2 Light sedation, briefly awakens to voice (eye opening/contact) < 10 sec",-2,rass_other_observed,124113,25202,21188,7.495
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"+1 Anxious, apprehensive, but not aggressive",1,rass_other_observed,121062,29575,23870,7.311
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-3 Moderate sedation, movement or eye opening; No eye contact",-3,rass_other_observed,108251,18626,16332,6.537
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-4 Deep sedation, no response to voice, but movement or eye opening to physical stimulation",-4,rass_deep_sedation_or_unarousable,95658,16505,14964,5.776
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-5 Unarousable, no response to voice or physical stimulation",-5,rass_deep_sedation_or_unarousable,90411,16613,15629,5.46
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"+2 Frequent nonpurposeful movement, fights ventilator",2,rass_other_observed,33011,11205,10105,1.993
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,+3 Pulls or removes tube(s) or catheter(s); aggressive,3,rass_other_observed,14043,5968,5543,0.848
+228096,Richmond-RAS Scale,Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"+4 Combative, violent, danger to staff",4,rass_other_observed,2448,1433,1390,0.148
+228231,PAR-Consciousness,PAR-Consciousness,Routine Vital Signs,Text,consciousness_supporting_item,Arousable on calling,1,not_delirium_specific,6518,3215,3098,39.616
+228231,PAR-Consciousness,PAR-Consciousness,Routine Vital Signs,Text,consciousness_supporting_item,Fully awake,2,not_delirium_specific,4038,2163,2083,24.543
+228231,PAR-Consciousness,PAR-Consciousness,Routine Vital Signs,Text,consciousness_supporting_item,N/A - pt to remain sedated,0,not_delirium_specific,3864,2154,2076,23.485
+228231,PAR-Consciousness,PAR-Consciousness,Routine Vital Signs,Text,consciousness_supporting_item,Not responding,0,not_delirium_specific,2033,1157,1139,12.356
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale, 0  Alert and calm,0,not_delirium_specific,993599,74531,52771,71.724
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,-1 Awakens to voice (eye opening/contact) > 10 sec,1,not_delirium_specific,252047,25298,21471,18.194
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-5 Unarousable, no response to voice or physical stimulation",5,not_delirium_specific,48289,9412,9099,3.486
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-2 Light sedation, briefly awakens to voice (eye opening/contact) < 10 sec",2,not_delirium_specific,40182,9299,8614,2.901
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-4 Deep sedation, no response to voice, but movement or eye opening to physical stimulation",4,not_delirium_specific,28148,6328,6080,2.032
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,Pain/Sedation,Text,rass_sedation_scale,"-3 Moderate sedation, movement or eye opening; No eye contact",3,not_delirium_specific,23040,5787,5528,1.663
+228300,CAM-ICU MS change,CAM-ICU MS change,Pain/Sedation,Text,cam_icu_component,No (Stop - Not delirious),,component_negative,4213,1480,1308,64.321
+228300,CAM-ICU MS change,CAM-ICU MS change,Pain/Sedation,Text,cam_icu_component,Unable to Assess (Stop),,component_unable_or_not_valid,1406,451,423,21.466
+228300,CAM-ICU MS change,CAM-ICU MS change,Pain/Sedation,Text,cam_icu_component,Yes (Continue),,component_positive,931,338,316,14.214
+228301,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,"Yes (3 or more errors, then Continue)",,component_positive,615,246,231,64.533
+228301,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,No (less than 3 errors - Stop - Not delirious),,component_negative,338,205,198,35.467
+228302,CAM-ICU RASS LOC,CAM-ICU RASS LOC,Pain/Sedation,Text,cam_icu_component,Yes,,component_positive,756,295,280,67.742
+228302,CAM-ICU RASS LOC,CAM-ICU RASS LOC,Pain/Sedation,Text,cam_icu_component,No,,component_negative,360,241,234,32.258
+228303,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,No,,component_negative,15064,2136,1831,97.926
+228303,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,Yes,,component_positive,319,155,146,2.074
+228332,Delirium assessment,Delirium assessment,Pain/Sedation,Text,direct_delirium_assessment,Negative,,negative,361125,66638,47912,59.14
+228332,Delirium assessment,Delirium assessment,Pain/Sedation,Text,direct_delirium_assessment,UTA,,unable_to_assess,130455,25769,22521,21.364
+228332,Delirium assessment,Delirium assessment,Pain/Sedation,Text,direct_delirium_assessment,Positive,,positive,119052,22462,18180,19.497
+228334,CAM-ICU Altered LOC,CAM-ICU Altered LOC,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,107833,21819,17811,83.555
+228334,CAM-ICU Altered LOC,CAM-ICU Altered LOC,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,21223,9686,8362,16.445
+228335,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,2304,1312,1222,53.832
+228335,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,1155,905,868,26.986
+228335,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,Unable to Assess,0,component_unable_or_not_valid,821,554,532,19.182
+228336,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,29600,6641,5643,70.384
+228336,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,8214,4446,3973,19.532
+228336,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,Unable to Assess,0,component_unable_or_not_valid,4241,2267,2082,10.084
+228337,CAM-ICU MS Change,CAM-ICU MS Change,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,110155,22103,16817,65.666
+228337,CAM-ICU MS Change,CAM-ICU MS Change,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,42872,9108,7563,25.557
+228337,CAM-ICU MS Change,CAM-ICU MS Change,Pain/Sedation,Text,cam_icu_component,Unable to Assess,0,component_unable_or_not_valid,14723,5017,4451,8.777
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,Patient will remain safe and free of injury,,not_delirium_specific,150695,13977,11430,21.617
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,Patient will remain free of signs and symptoms of agitation,,not_delirium_specific,144221,13359,10977,20.688
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,Risk factors will be minimized or eliminated,,not_delirium_specific,141257,12985,10701,20.263
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,Identify delirium as soon as clinically evident,,not_delirium_specific,132774,12368,10193,19.046
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,Patient will remain alert and oriented per patient's pre-hospital baseline,,not_delirium_specific,122358,12306,10193,17.552
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,---,,not_delirium_specific,3142,280,261,0.451
+228973,Altered Mental Status  NCP - Expected outcomes,AMS NCP - Expected outcomes,Care Plans,Text,care_plan_altered_mental_status,Other,,not_delirium_specific,2665,294,281,0.382
+228975,Altered Mental Status  NCP - Goal,AMS NCP - Goal,Care Plans,Text,care_plan_altered_mental_status,Patient will remain free of delirium throughout ICU course,,not_delirium_specific,991,191,176,44.439
+228975,Altered Mental Status  NCP - Goal,AMS NCP - Goal,Care Plans,Text,care_plan_altered_mental_status,Patient will remain CAM-ICU negative for delirium throughout ICU course,,not_delirium_specific,828,168,155,37.13
+228975,Altered Mental Status  NCP - Goal,AMS NCP - Goal,Care Plans,Text,care_plan_altered_mental_status,Other,,not_delirium_specific,357,70,64,16.009
+228975,Altered Mental Status  NCP - Goal,AMS NCP - Goal,Care Plans,Text,care_plan_altered_mental_status,---,,not_delirium_specific,54,14,14,2.422
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Assess CAM-ICU every 12 hours and PRN,,not_delirium_specific,144768,13423,10982,11.479
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Promote sleep hygiene,,not_delirium_specific,133814,12724,10449,10.61
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Goal RASS as ordered,,not_delirium_specific,131174,11945,9909,10.401
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Interventions for pain control per related care plan,,not_delirium_specific,131002,12130,10100,10.387
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Promote early mobility,,not_delirium_specific,119005,11390,9433,9.436
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Avoid deleriogenic medications,,not_delirium_specific,115854,10878,9036,9.186
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Interventions for infection per related care plan,,not_delirium_specific,111883,9595,7993,8.871
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Interventions for hypoxia per related care plan,,not_delirium_specific,101332,8505,7167,8.035
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Interventions for metabolic abnormalities per related care plan,,not_delirium_specific,96208,8236,6933,7.629
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Daily assessment of readiness to extubate,,not_delirium_specific,88541,7105,6180,7.021
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Antipsychotic medications for hyperactive delirium as indicated and ordered,,not_delirium_specific,78155,7456,6402,6.197
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,Other,,not_delirium_specific,6232,596,552,0.494
+228977,Altered Mental Status  NCP - Interventions,AMS NCP - Interventions,Care Plans,Text,care_plan_altered_mental_status,---,,not_delirium_specific,3195,279,261,0.253
+228979,Altered Mental Status  NCP - outcomes met,AMS NCP - outcomes met,Care Plans,Text,care_plan_altered_mental_status,Not Met,,not_delirium_specific,410,162,155,72.183
+228979,Altered Mental Status  NCP - outcomes met,AMS NCP - outcomes met,Care Plans,Text,care_plan_altered_mental_status,Met,,not_delirium_specific,158,96,93,27.817
+229088,Altered Mental Status  NCP - Plan revised,AMS NCP - Plan revised,Care Plans,Text,care_plan_altered_mental_status,Yes,,not_delirium_specific,35288,13008,10996,56.847
+229088,Altered Mental Status  NCP - Plan revised,AMS NCP - Plan revised,Care Plans,Text,care_plan_altered_mental_status,No,,not_delirium_specific,26787,8525,7367,43.153
+229089,Altered Mental Status  NCP - Problem resolved,AMS NCP - Problem resolved,Care Plans,Text,care_plan_altered_mental_status,No,,not_delirium_specific,142713,13765,11303,92.599
+229089,Altered Mental Status  NCP - Problem resolved,AMS NCP - Problem resolved,Care Plans,Text,care_plan_altered_mental_status,Yes,,not_delirium_specific,11407,1886,1720,7.401
+229324,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,9628,4496,3932,73.597
+229324,CAM-ICU Disorganized thinking,CAM-ICU Disorganized thinking,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,3454,2596,2434,26.403
+229325,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,98112,17100,13839,74.714
+229325,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,24523,12802,10956,18.675
+229325,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,Language Barrier,0,component_unable_or_not_valid,6232,2336,2024,4.746
+229325,CAM-ICU Inattention,CAM-ICU Inattention,Pain/Sedation,Text,cam_icu_component,Preexisting Advanced Dementia,0,component_unable_or_not_valid,2449,1170,1029,1.865
+229326,CAM-ICU MS Change,CAM-ICU MS Change,Pain/Sedation,Text,cam_icu_component,No,0,component_negative,208908,42208,31512,60.772
+229326,CAM-ICU MS Change,CAM-ICU MS Change,Pain/Sedation,Text,cam_icu_component,Yes,1,component_positive,134848,23917,18916,39.228

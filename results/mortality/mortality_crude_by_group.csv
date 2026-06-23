@@ -1,0 +1,5 @@
+﻿group,label,n,death_365d_events,person_years,death_rate_per_100_person_years,km_365d_mortality_risk,logrank_p_value_descriptive
+1_no_primary_psych_no_delirium,No psychiatric comorbidity / no delirium,13886,1854,12655.775496235456,14.649438120575738,0.1335157712804269,1.4503512577543013e-105
+2_primary_psych_no_delirium,Psychiatric comorbidity / no delirium,5980,972,5316.041067761807,18.28428312742959,0.16254180602006818,1.4503512577543013e-105
+3_no_primary_psych_delirium,No psychiatric comorbidity / delirium,6022,1452,4944.032854209446,29.368736875681133,0.2411159083361013,1.4503512577543013e-105
+4_primary_psych_delirium,Psychiatric comorbidity / delirium,3478,827,2863.115674195756,28.884617113218898,0.2377803335250147,1.4503512577543013e-105

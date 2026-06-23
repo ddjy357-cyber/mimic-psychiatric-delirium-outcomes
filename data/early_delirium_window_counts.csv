@@ -1,0 +1,6 @@
+﻿delirium_window,base_n,positive_n,negative_n,unclassifiable_n,no_assessment_n,any_uta_n,one_negative_only_n,insufficient_negative_n,assessment_records,positive_records,negative_records,uta_records,classifiable_n,classifiable_percent,positive_percent_among_classifiable
+24h_at_least_one_negative,46316,6613,24983,14720,11419,11893,6794,0,96040,10601,64947,20492,31596,68.22,20.93
+24h_at_least_two_negative_records,46316,6613,18189,21514,11419,11893,6794,6794,96040,10601,64947,20492,24802,53.55,26.66
+48h_two_negative_days,46316,8647,19201,18468,10534,12823,3623,6367,152065,18299,106507,27259,27848,60.13,31.05
+72h_two_negative_days,46316,9562,19911,16843,10393,13263,3016,5332,186804,24500,130039,32265,29473,63.63,32.44
+whole_icu_two_negative_days,46316,10950,19585,15781,10328,13865,2654,4854,316937,58319,201117,57501,30535,65.93,35.86

@@ -1,0 +1,6 @@
+﻿concept_table,table_row_count,duplicate_key_count,key_scope,status,metric,denominator,patient_count,percent
+rrt,4098630,606322,ICU time point,built_from_official_duckdb_sql,,,,
+crrt,475214,0,ICU time point,built_from_official_duckdb_sql,,,,
+first_day_rrt,94458,0,one row per ICU stay expected,built_from_official_duckdb_sql,,,,
+,,,,,first_24h_active_rrt,46316,1328,2.87
+,,,,,first_24h_active_rrt_classifiable,29458,888,3.01

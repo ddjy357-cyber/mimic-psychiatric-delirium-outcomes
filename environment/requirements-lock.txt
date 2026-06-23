@@ -1,0 +1,10 @@
+duckdb==1.5.4
+pandas==2.3.3
+numpy==2.3.5
+lifelines==0.30.3
+statsmodels==0.14.6
+patsy==1.0.2
+scipy==1.18.0
+matplotlib==3.11.0
+Pillow
+pypdfium2

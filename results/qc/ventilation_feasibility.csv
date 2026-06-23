@@ -1,0 +1,12 @@
+﻿concept_table,table_row_count,duplicate_key_count,negative_or_zero_interval_count,status,ventilation_category,interval_count,metric,denominator,patient_count,percent
+ventilator_setting,1377514,0,,built_from_official_duckdb_sql,,,,,,
+oxygen_delivery,794232,0,,built_from_official_duckdb_sql,,,,,,
+ventilation,144812,0,0,built_from_official_duckdb_sql,,,,,,
+ventilation_status_distribution,,,,,SupplementalOxygen,83749,,,,
+ventilation_status_distribution,,,,,InvasiveVent,46004,,,,
+ventilation_status_distribution,,,,,Tracheostomy,5285,,,,
+ventilation_status_distribution,,,,,NonInvasiveVent,4833,,,,
+ventilation_status_distribution,,,,,HFNC,4744,,,,
+ventilation_status_distribution,,,,,None,197,,,,
+,,,,,,,first_24h_invasive_ventilation,46316,18112,39.11
+,,,,,,,first_24h_invasive_ventilation_classifiable,29458,10333,35.08

@@ -1,0 +1,2 @@
+﻿test,reduced_log_likelihood,full_log_likelihood,chisq,df,p_value,interpretation
+joint_exposure_time_varying_nonph_lrt,-49250.90762986846,-49203.81710015576,94.18105942540569,6,4.093734454017559e-18,formal global non-PH test for joint exposure time-varying effects
