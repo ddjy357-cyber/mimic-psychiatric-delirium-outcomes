@@ -1,10 +1,10 @@
 # Public Release Privacy Audit
 
-Generated: 2026-06-23T01:36:27.249766+00:00
+Generated: 2026-06-23T01:38:04.163443+00:00
 
 | Check | Result |
 |---|---|
-| No MIMIC raw files or DuckDB databases | FAIL |
+| No MIMIC raw files or DuckDB databases | PASS |
 | CSV patient identifier columns | PASS if no CSV headers include patient-level identifier fields |
 | Credentials and local paths | PASS if no secret-like assignments or local user paths are detected |
 
@@ -35,11 +35,13 @@ Generated: 2026-06-23T01:36:27.249766+00:00
 | data\psychiatric_mapping_provenance_v1.1.md | PASS |  |
 | data\README.md | PASS |  |
 | docs\Additional_File_RECORD_Algorithms_and_Code_Lists.md | PASS |  |
+| docs\build_summary.json | PASS |  |
 | docs\github_manual_steps.md | PASS |  |
 | docs\manuscript_figure_legends_v1.md | PASS |  |
 | docs\manuscript_methods_results_v1.md | PASS |  |
 | docs\manuscript_results_data_traceability_v1.md | PASS |  |
 | docs\manuscript_tables_v1.md | PASS |  |
+| docs\public_release_privacy_audit.md | PASS |  |
 | docs\reproducibility_guide.md | PASS |  |
 | docs\zenodo_manual_steps.md | PASS |  |
 | environment\python_environment.txt | PASS |  |
@@ -50,7 +52,7 @@ Generated: 2026-06-23T01:36:27.249766+00:00
 | figures\graphical_abstract\Graphical_Abstract.pdf | PASS |  |
 | figures\graphical_abstract\Graphical_Abstract.svg | PASS |  |
 | figures\graphical_abstract\Graphical_Abstract_920x300.png | PASS |  |
-| figures\main\README_missing_main_figures.md | FAIL | local_project_path |
+| figures\main\README_missing_main_figures.md | PASS |  |
 | figures\supplementary\source_data.csv | PASS |  |
 | figures\supplementary\Supplementary_Figure_S1_KM_mortality.pdf | PASS |  |
 | figures\supplementary\Supplementary_Figure_S1_KM_mortality.png | PASS |  |
@@ -92,7 +94,7 @@ Generated: 2026-06-23T01:36:27.249766+00:00
 | results\integrated\final_table1.csv | PASS |  |
 | results\integrated\integrated_results_manifest.md | PASS |  |
 | results\integrated\master_absolute_risks.csv | PASS |  |
-| results\integrated\master_interaction_results.csv | FAIL | local_project_path |
+| results\integrated\master_interaction_results.csv | PASS |  |
 | results\integrated\master_relative_effects.csv | PASS |  |
 | results\integrated\master_sensitivity_results.csv | PASS |  |
 | results\integrated\results_ready_summary.md | PASS |  |
@@ -177,16 +179,6 @@ Generated: 2026-06-23T01:36:27.249766+00:00
 | results\sensitivity\strict_prior_mortality_results.csv | PASS |  |
 | results\sensitivity\strict_prior_mortality_standardized_risk.csv | PASS |  |
 | results\sensitivity\strict_prior_readmission_results.csv | PASS |  |
-| scripts\__pycache__\build_analysis_dataset_v1_1.cpython-312.pyc | PASS |  |
-| scripts\__pycache__\freeze_psychiatric_mapping_v1_1.cpython-312.pyc | PASS |  |
-| scripts\__pycache__\generate_submission_figures.cpython-312.pyc | PASS |  |
-| scripts\__pycache__\run_definition_refinement.cpython-312.pyc | PASS |  |
-| scripts\__pycache__\run_pipeline.cpython-312.pyc | PASS |  |
-| scripts\__pycache__\run_psychiatric_code_validation.cpython-312.pyc | PASS |  |
-| scripts\analysis\__pycache__\run_final_sensitivity_and_integration_v1.cpython-312.pyc | PASS |  |
-| scripts\analysis\__pycache__\run_primary_mortality_v1_1.cpython-312.pyc | PASS |  |
-| scripts\analysis\__pycache__\run_readmission_cif_bootstrap_v1_2.cpython-312.pyc | PASS |  |
-| scripts\analysis\__pycache__\run_readmission_outcomes_v1.cpython-312.pyc | PASS |  |
 | scripts\analysis\run_final_sensitivity_and_integration_v1.py | PASS |  |
 | scripts\analysis\run_primary_mortality_v1_1.py | PASS |  |
 | scripts\analysis\run_readmission_cif_bootstrap_v1_2.py | PASS |  |
@@ -195,8 +187,6 @@ Generated: 2026-06-23T01:36:27.249766+00:00
 | scripts\archive_deprecated\run_primary_mortality_v1.R | PASS |  |
 | scripts\archive_deprecated\run_readmission_cif_bootstrap_v1_1.py | PASS |  |
 | scripts\build_analysis_dataset_v1_1.py | PASS |  |
-| scripts\derived_concepts\__pycache__\run_technical_feasibility_audit.cpython-312.pyc | PASS |  |
-| scripts\derived_concepts\__pycache__\run_technical_feasibility_corrections.cpython-312.pyc | PASS |  |
 | scripts\derived_concepts\project_specific\non_neurologic_sofa_0_24h.sql | PASS |  |
 | scripts\derived_concepts\project_specific\non_neurologic_sofa_0_6h.sql | PASS |  |
 | scripts\derived_concepts\run_technical_feasibility_audit.py | PASS |  |
@@ -206,3 +196,4 @@ Generated: 2026-06-23T01:36:27.249766+00:00
 | scripts\run_definition_refinement.py | PASS |  |
 | scripts\run_pipeline.py | PASS |  |
 | scripts\run_psychiatric_code_validation.py | PASS |  |
+| SHA256SUMS.txt | PASS |  |

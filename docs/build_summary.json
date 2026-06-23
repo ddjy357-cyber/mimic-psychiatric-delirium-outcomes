@@ -1,0 +1,14 @@
+{
+  "public_release_dir": "E:\\Codex\\SCI\\projects\\mental_delirium_longterm\\public_release_v1",
+  "privacy_scan_pass": false,
+  "main_figures_copied": false,
+  "script_syntax_failures": [],
+  "release_zip": "E:\\Codex\\SCI\\projects\\mental_delirium_longterm\\public_release_v1.zip",
+  "release_zip_sha256": "702546CD6B811D6EFE0BA9FD16BB8FF8619C1130C6D50A2F4889CEFFB9D57DC6",
+  "git_status": "clean",
+  "submission_zip": "E:\\Codex\\SCI\\projects\\mental_delirium_longterm\\Critical_Care_Submission_Package_v5.zip",
+  "submission_zip_sha256": "CF3550A607AB5073107F7CF323FB06412B4BDC3F2DAA1600353EF647BA14007D",
+  "submission_file_count": 34,
+  "zenodo_token_present": false,
+  "gh_available": false
+}
