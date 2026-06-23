@@ -27,7 +27,7 @@ This is an archival analysis-code and aggregate-results release. It is not an in
 
 MIMIC-IV version 3.1 is available to credentialed users through PhysioNet under its data use agreement. MIMIC-IV data are not redistributed here and are not licensed by this repository. Users must obtain their own credentialed access and comply with the MIMIC-IV data use agreement.
 
-Data availability statements intentionally retain GitHub and Zenodo placeholders until the public repository and archive DOI are created.
+The public repository URL is https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes. The Zenodo DOI placeholder remains until the archive DOI is created.
 
 ## Final Result Version Hierarchy
 

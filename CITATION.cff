@@ -12,6 +12,6 @@ authors:
     given-names: "Jieyang"
     orcid: "https://orcid.org/0000-0002-5858-4825"
     email: "3324253@zju.edu.cn"
-repository-code: "https://github.com/[USER_OR_ORG]/mimic-psychiatric-delirium-outcomes"
+repository-code: "https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes"
 license: "MIT"
 abstract: "Archival analysis code and aggregate results for a retrospective MIMIC-IV v3.1 cohort study of documented psychiatric comorbidity, early ICU delirium, and post-discharge outcomes."

@@ -8,3 +8,5 @@ This release fixes public-release and submission-package issues identified durin
 - Removed stale manuscript v1 draft files from the public release.
 - Replaced local filesystem paths with `${PROJECT_DIR}`, `${MIMIC_DUCKDB}`, and `${MIMIC_RAW_DIR}` placeholders.
 - Updated release metadata to v1.0.1.
+
+Repository: https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes

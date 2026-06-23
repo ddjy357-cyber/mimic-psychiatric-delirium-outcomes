@@ -19,7 +19,7 @@
       "affiliation": "Department of Critical Care Medicine, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine, Hangzhou, 310016, China"
     }
   ],
-  "description": "Public code, frozen definitions, aggregate results, and figure source data. No patient-level MIMIC-IV data are redistributed.",
+  "description": "Public code, frozen definitions, aggregate results, and figure source data for the MIMIC-IV study. Repository: https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes. No patient-level MIMIC-IV data are redistributed.",
   "keywords": [
     "MIMIC-IV",
     "ICU delirium",
@@ -27,5 +27,12 @@
     "critical care",
     "readmission",
     "mortality"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ]
 }
