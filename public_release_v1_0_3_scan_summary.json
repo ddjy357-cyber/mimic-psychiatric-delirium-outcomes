@@ -1,0 +1,45 @@
+{
+  "version": "v1.0.3",
+  "active_wrong_jieyang_orcid_hits": 0,
+  "active_wrong_ge_orcid_hits": 0,
+  "active_ge_orcid_missing_author_metadata_hits": 0,
+  "active_xuan_long_hits": 0,
+  "local_path_hits": [],
+  "credential_hits": [],
+  "allowed_credential_explanatory_hits": [
+    {
+      "relative_path": "docs/reproducibility_guide.md",
+      "line_number": 9,
+      "pattern": "physionet_credentials",
+      "line_text": "MIMIC-IV v3.1 must be obtained directly from PhysioNet by credentialed users. This repository does not redistribute MIMIC-IV data or local DuckDB databases.",
+      "finding": "allowed_data_access_statement_not_credential"
+    },
+    {
+      "relative_path": "LICENSE-OUTPUTS.md",
+      "line_number": 5,
+      "pattern": "physionet_credentials",
+      "line_text": "This license does not apply to MIMIC-IV data. MIMIC-IV is not redistributed here. Users must obtain credentialed access from PhysioNet and comply with the MIMIC-IV data use agreement.",
+      "finding": "allowed_data_access_statement_not_credential"
+    },
+    {
+      "relative_path": "README.md",
+      "line_number": 31,
+      "pattern": "physionet_credentials",
+      "line_text": "MIMIC-IV version 3.1 is available to credentialed users through PhysioNet under its data use agreement. MIMIC-IV data are not redistributed here and are not licensed by this repository. Users must obtain their own credentialed access and comply with the MIMIC-IV data use agreement.",
+      "finding": "allowed_data_access_statement_not_credential"
+    }
+  ],
+  "patient_level_data_hits": [],
+  "aggregate_identifier_schema_qc_notes": [],
+  "github_placeholder_hits": [],
+  "deprecated_active_hits": [],
+  "allowed_deprecated_registry_hits": [
+    {
+      "relative_path": "docs/deprecated_version_registry.md",
+      "line_number": 7,
+      "pattern": "readmission_cif_deprecated_phrase",
+      "line_text": "| Readmission CIF v1.1 | Deprecated | Baseline/linear-predictor centering error | Readmission CIF v1.2 |",
+      "finding": "allowed_deprecated_registry_documentation"
+    }
+  ]
+}

@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.0.3 - 2026-06-24
+
+- ORCID metadata correction only.
+- Jieyang Dong's ORCID corrected to 0000-0002-2798-9491.
+- Ge Zhang's ORCID added as 0000-0002-5858-4825.
+- No analytic code, statistical model, aggregate result, table, figure, or study conclusion changed.
+
+## v1.0.2 - 2026-06-23
+
+- Author metadata correction only.
+- Final authors recorded as Jieyang Dong and Ge Zhang.
+- No analytic code, statistical model, aggregate result, table, or figure changed.
+
 ## v1.0.1 - 2026-06-23
 
 - Public packaging hotfix after independent pre-release audit.

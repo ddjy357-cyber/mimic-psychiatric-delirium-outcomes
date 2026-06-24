@@ -1,12 +1,12 @@
 # mimic-psychiatric-delirium-outcomes
 
-Archival analysis code and aggregate-results release, version v1.0.2.
+Archival analysis code and aggregate-results release, version v1.0.3.
 
 **Documented Psychiatric Comorbidity, Early ICU Delirium, and Long-Term Outcomes Among Survivors of Critical Illness: A Retrospective Cohort Study Using MIMIC-IV**
 
 ## Purpose
 
-Version 1.0.2 corrects author metadata only. An erroneously included author has been removed. No analytic code, statistical model, aggregate result, table, or figure was changed.
+Version 1.0.3 corrects ORCID metadata only. Jieyang Dong's ORCID is 0000-0002-2798-9491, and Ge Zhang's ORCID is 0000-0002-5858-4825. No analytic code, statistical model, aggregate result, table, figure, or study conclusion was changed.
 
 
 This repository preserves the actual analysis scripts, frozen study definitions, aggregate result files, figure source data, and final public figures used for the study. It contains no patient-level data, no MIMIC-IV database, no raw MIMIC files, and no subject-level identifiers.
@@ -68,8 +68,8 @@ Please cite this repository using `CITATION.cff`. For the MIMIC-IV database, cit
 
 Jieyang Dong and Ge Zhang contributed equally to this work.
 
-- Jieyang Dong (ORCID: 0000-0002-5858-4825)
-- Ge Zhang
+- Jieyang Dong (ORCID: 0000-0002-2798-9491)
+- Ge Zhang (ORCID: 0000-0002-5858-4825)
 
 Department of Critical Care Medicine, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine, Hangzhou, 310016, China.
 
