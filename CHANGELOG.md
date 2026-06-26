@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.4 - 2026-06-26
+
+- This documentation-only release corrects the author-contribution description. Jieyang Dong and Ge Zhang are not equal contributors. No analytic code, statistical model, aggregate result, table, figure, or study conclusion was changed.
+
 ## v1.0.3 - 2026-06-24
 
 - ORCID metadata correction only.

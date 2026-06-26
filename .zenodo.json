@@ -1,7 +1,7 @@
 {
   "title": "Documented Psychiatric Comorbidity, Early ICU Delirium, and Long-Term Outcomes Among Survivors of Critical Illness",
-  "version": "v1.0.3",
-  "publication_date": "2026-06-24",
+  "version": "v1.0.4",
+  "publication_date": "2026-06-26",
   "upload_type": "software",
   "license": "MIT",
   "creators": [
@@ -16,7 +16,7 @@
       "affiliation": "Department of Critical Care Medicine, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine, Hangzhou, 310016, China"
     }
   ],
-  "description": "Public code, frozen definitions, aggregate results, and figure source data for the MIMIC-IV study. Repository: https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes. This version corrects the ORCID metadata only. No analytic code, statistical results, tables, or figures were changed. No patient-level MIMIC-IV data are redistributed.",
+  "description": "Public code, frozen definitions, aggregate results, and figure source data for the MIMIC-IV study. Repository: https://github.com/ddjy357-cyber/mimic-psychiatric-delirium-outcomes. This documentation-only version corrects the author-contribution description. Jieyang Dong and Ge Zhang are not equal contributors. No analytic code, statistical results, tables, or figures were changed. No patient-level MIMIC-IV data are redistributed.",
   "keywords": [
     "MIMIC-IV",
     "ICU delirium",
